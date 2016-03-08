@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+
+<!-- /**
+	casual - Responsive Retina Ready HTML Template
+ 	Copyright (c) 2013, Subramanian 
+
+	Author: Subramanian
+    Profile: themeforest.net/user/FMedia/
+	
+    Version: 1.0.0
+	Release Date: June 2013
+**/ -->	
+
+    <html lang="en"> 
+    
+    <head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>casual - Responsive Retina Ready HTML Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== --> 
+  
+  <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  	
+    <!-- Included CSS files 
+	================================================== -->
+    
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    
+  	<link rel="stylesheet" type="text/css"  href="css/main.min.css">
+	<link rel="stylesheet" type="text/css"  href="css/base.min.css">
+    <link rel="stylesheet" type="text/css"  href="css/skeleton.css">
+    <link rel="stylesheet" type="text/css"  href="css/color.css">	
+	<link rel="stylesheet" type="text/css"  href="css/jquery.fancybox-1.3.4.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css"  href="css/flexslider.min.css" media="screen" />
+    <link rel="stylesheet" type="text/css"  href="css/bigvideo.css">
+    <link rel="stylesheet" type="text/css"  href="css/jplayer.css" media="screen" />
+    
+	<!--[if gte IE 9]>
+      <style type="text/css">
+        .gradient {
+           filter: none;
+        }
+      </style>
+    <![endif]-->
+
+
+    <!-- Included javascript files 
+	================================================== -->
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <!--[if !IE]><!-->
+	<script src="js/ios6-timers.js"></script> 
+    <!--<![endif]-->
+	<script type="text/javascript" src="js/custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.vegas.min.js" ></script>   
+	<script type="text/javascript" src="js/jquery.fancybox-1.3.4.min.js"></script>  
+    <script type="text/javascript" src="js/jquery.isotope.min.js" ></script> 
+    <script type="text/javascript" src="js/jquery.masonry.min.js" ></script>  
+    <script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.js"></script>
+    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.22.custom.min.js"></script>
+    <script type="text/javascript" src="js/video.min.js"></script>
+    <script type="text/javascript" src="js/bigvideo.js"></script>
+    <script type="text/javascript" src="js/jquery.slider.min.js"></script>
+    <script type="text/javascript" src="js/portfolio.detail.min.js"></script>  
+    <script type="text/javascript" src="js/main-fm.min.js"></script> 
+    
+    
+    
+    <script>
+
+
+/* Music player 
+	Add your music file to the playList array, 
+	The Initialize code of music plug-in is placed in custom.min.js file near comment text // Initialize Music player (jPlayer) plug-in */ 
+
+	var playList = [
+				{
+					title:"Live My Life",
+					mp3:"music/music1.mp3",
+					ogg:"music/music1.ogg"
+				},
+				{
+					title:"Introspective Piano Film Scene",
+					mp3:"music/music2.mp3",
+					ogg:"music/music2.ogg"
+				},
+				{
+					title:"A Brighter Day",
+					mp3:"music/music3.mp3",
+					ogg:"music/music3.ogg"
+				}
+			];		
+		  			
+/* End music player */	
+		
+	
+			
+
+/* Site Main plug-in initilize */
+		
+		$(document).ready(function(){			
+			
+			
+			jQuery(function($){
+				$("body").mainFm({
+				
+				/* set whether it's an one page or separate page file, if it's set false, the template works as a separate page version*/
+					onePage : false,
+					
+				/* Set the opening page. 
+					leave it blank value if you need to show the !home page as a opening page*/
+					homePage : "blog.html",
+					
+					backgroundOverlay : 'images/background_overlay.png',
+					
+				/* Full screen gallery options for autoplay and slideshow delay time*/
+					galleryAutoplay : "true",
+					gallerySlideshowDelay : 1.5,
+				/* Full screen gallery default image resize type. Options are fill/fit/none */
+					galleryImageResize : "fill",
+					
+				/* FlexSlider slideshow speed */
+					slideshowSpeed : 5000
+					
+				});
+			});
+			
+			
+		});
+			
+	</script>
+ 
+  
+</head>
+<body >
+
+
+<!-- Site will be fade-in using the below pageFade div -->
+<div class="pageFade bg_white" > <div class="open_loading"></div> </div>
+
+
+
+<!-- page scroll to Top button -->
+<div class="pgScrollUp"></div>
+
+
+
+<!-- Background Image overlay Color div -->
+<div class="backgroundColor"> </div>
+
+
+
+
+<!--
+Site main frame begin
+Note: Don't edit below code, except comment area 
+-->
+
+<div class="header" >
+    <div class="headerHold" >	 
+        <div class="container fullWidthHeader" >
+               
+            <!-- Place your logo here. data-src-small use to add logo for mobile device -->
+            <div class="logo" >
+                <a href="index.html#!home"><img src="images/logo.png" data-src-small="images/logo_s.png" data-retina="yes" alt="logo text"></a>
+            </div>
+            
+            <!--<div class="sixteen columns" style="float: right">       -->
+                <div class="nav" >
+                    <ul id="navHolder" >
+                        <!--  Add require site page navigation -->                    
+                        <li><a href="index.html#!home">Home</a></li> 
+                        <li><a href="index.html#!aboutus">About Us</a> </li>
+                        <li><a href="index.html#!services">services</a> </li>
+                        <li><a href="index.html#!portfolio">Portfolio</a></li>
+                        <li><a href="index.html#!fullscreen_gallery">Gallery</a></li>
+                            
+                        <li><a href="#">blog</a>
+                        	<!-- Sub menu -->
+                            <ul>
+                                <li><a href="index.html#!blog_post">Blog Post</a></li>
+                                <li><a href="blog.html">Single page</a></li>
+                                <li><a href="features.html">Features</a></li>                                
+                            </ul>
+                        </li>
+                            
+                        <li><a href="index.html#!contactus" class="last">Contact us</a></li>                                    
+                    </ul>
+                </div>
+        	</div>
+        <!--</div>-->
+        
+	</div>
+</div>
+    
+
+
+
+<!-- Portfolio/News full details content are load in backArea id div  -->
+<div id="backArea" class="darkStyle" ></div>  
+
+
+<!-- The Dynamic content will be load inside the below mainContainer div-->      
+<div class="mainContainer " >
+ 
+    <div id="bodyContent" >
+           
+        <!-- Page content are loaded inside the pageHolder div  -->
+        <div class="pageHolder" ></div> 
+        
+        <div id="fsTextWarp" ></div>
+        
+    </div>
+
+</div>
+
+ 
+ <!-- Footer Content -->
+<div class="footer  darkStyle " >
+	<div class="footerHolder container fullWidthFooter" > 
+
+		<!-- Place your copyright text -->
+		<div class="four columns"><h6 class="bottomText">Copyright © 2013 FMedia</h6></div>
+        <!-- Add any ty[e of test here -->
+        <div class="three columns"><h6 class="bottomText"><a href="#" class="normal">Buy this Template</a></h6></div>
+
+        <div class="four columns " >
+        	<!-- Social network web page link  -->
+            <ul class="social_bookmarks noMargin">                 
+                <li class="twitter_white noMargin"><a >Follow us on Twitter</a></li>
+                <li class="facebook_white noMargin"><a >Join our Facebook Group</a></li>
+                <li class="gplus_white noMargin"><a >Join me on Google Plus</a></li>
+                <li class="linkedin_white noMargin"><a >Add me on Linkedin</a></li>
+                <li class="rss_white noMargin "><a >RSS</a></li>
+            </ul>
+        </div>
+
+           
+        <div class="five columns musicPlayer" >  
+
+            <!-- Start Music player  -->
+           <div id="jquery_jplayer_1" class="jp-jplayer"></div>
+                        
+            <div id="jp_container_1" class="jp-audio">
+                <div class="jp-type-playlist">
+                        
+                    <div id="music-title">Initializing</div>                   	
+                    
+                    <div class="jp-gui jp-interface">                        	 
+                        <ul class="jp-controls">
+                            <li><a href="javascript:;" class="jp-previous" tabindex="1">previous</a></li>
+                            <li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+                            <li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+                            <li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+                            <li><a href="javascript:;" class="jp-mute" tabindex="1" >mute</a></li>
+                            <li><a href="javascript:;" class="jp-unmute" tabindex="1" >unmute</a></li>
+                            <li><a href="javascript:;" class="jp-volume-max" tabindex="1" >max volume</a></li>
+                        </ul>
+                    </div>                       
+                    <div class="jp-volume-bar">
+                        <div class="jp-volume-bar-value"></div>
+                    </div>
+                    <div class="jp-playlist">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>                 
+                    
+                    <div class="jp-no-solution">
+                        <span>Update your browser or <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a></span>.
+                    </div>
+                </div>
+            </div>              
+           
+            <!-- End Music player  -->
+
+        </div>
+        
+        
+        <div class="five columns replace_musicPlayer" > 
+        	<h6 class="bottomText"><span class="list2_white"><a class="normal">contact@emailid.com</a></span></h6>
+        </div>
+
+
+	</div>
+</div>
+
+<!-- End site main frame -->
+
+<!--
+
+IMPORTANT NOTES:
+	
+1. About Page
+    On each page class div, you must set the page name(id) using data-id attribute, this data-id is used to link on site menu see the below example. 
+
+	<div class="page" data-id="!home" > Page Content </div>
+    
+	The data-id (!home) is assign in href (#!home) value in site menu tag
+    <a href="#!home">Home</a>
+
+
+2. Add background image to each page
+
+	On Each page class div you can see the attribute data-background and data-background-small. The both attribute is used to
+    set the page background for desktop and mobile device
+ 	
+    Example:
+    <div class="page darkStyle darkBackground" data-id="!aboutus" data-background="images/background/image1.jpg" data-background-small="images/background/image1_s.jpg"  >
+    
+    If you need to remove the background just set data-background="none"
+
+
+3. lazyload
+
+	The lazyload class is used to load the image only when the page is display. 
+
+	For Example:
+	if you add the img tag <img src="image page" /> 
+	it will increasethe site load time, to avoid this problem,
+    
+	Just use the <a> tag with class name lazyload. see the below code
+	<a  class="lazyload scale-with-grid" href="desktop size image" data-src-small="Mobile size image" title="image text">image</a>
+    
+	It used to load the image only when the page display. Both High and low resolution image will define using href and data-src-small attribute.
+ 
+    
+4. Page Style
+
+	darkStyle class is used to add the dark style to that content
+    lightStyle class is used to add the light style to that content
+   
+
+-->
+
+
+<!-- Begin Page content --> 
+<div class="container" >
+
+
+
+
+
+<!-- Blog Page-->
+
+<div class="page darkStyle" data-position="top" data-background="none" >
+	<div class="container" > 
+		
+        <div class="page_top_spacing"></div>   
+        
+        <div class="sixteen columns" >
+			<h1>Blog page - It's a separate page</h1>
+                    
+            <div class="separator_mini"></div> 
+         </div> 
+         
+         <div class="separator_mini"></div> 
+            <!-- Date -->
+            
+          <div class="row" > 
+            <div class="nine columns" >
+            	 <div class="blog_date dark_color">
+                      <span  class="b_date">05</span>
+                      <span  class="b_month">Jul</span> 
+                      <span  class="b_year">2012</span>                                       
+                  </div> 
+           </div>
+           <div class="seven columns" >
+                                <!-- Blog post Author and data -->
+                                <a class="list_hover"><span class="list7_white"> Collis Ta'eed</span></a>  
+                                <a class="list_hover"><span class="list8_white"> 6 comments</span></a>  
+                                <a class="list_hover"><span class="list10_white"> 50</span></a>              
+ 								<br>
+                               <!-- Social network link -->
+                                <span class="share"><span>share</span></span>
+                                <ul class="social_bookmarks noMargin">                 
+                                    <li class="twitter_white noMargin"><a >Follow us on Twitter</a></li>
+                                    <li class="facebook_white noMargin"><a >Join our Facebook Group</a></li>
+                                    <li class="gplus_white noMargin"><a >Join me on Google Plus</a></li>
+                                    <li class="linkedin_white noMargin"><a >Add me on Linkedin</a></li>
+                                    <li class="rss_white noMargin"><a >RSS</a></li>
+                                </ul>
+                                <div class="separator_mini"></div> 
+                            </div>
+			
+		</div> 
+        
+        
+        <hr>
+		
+        <div class="row" >
+        	<div id="flexslider-container" >
+                 <div class="flexSlideshow lightStyle" >
+                    <ul class="slides large_image"> 
+                    
+                        <li><a  class="lazyload scale-with-grid" href="images/blog_slideshow/image1.jpg" title="Some text">image</a></li>
+                            
+                        <li><a  class="lazyload scale-with-grid" href="images/blog_slideshow/image2.jpg" title="Some text">image</a></li>
+                            
+                        <li><a  class="lazyload scale-with-grid" href="images/blog_slideshow/image3.jpg" title="Some text">image</a> </li>
+                            
+                        <li><a  class="lazyload scale-with-grid" href="images/blog_slideshow/image4.jpg" title="Some text">image</a> </li>
+                            
+                    </ul>
+                </div>
+            </div>
+            <div class="separator_mini"></div> 
+        </div>
+                
+        <div class="fifteen columns " >
+            <!-- Description Text -->
+            	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo <a href="#!">tristique odio</a>, Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi nam liber.</p>
+                    
+                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi nam liber.</p>
+					
+				<br>
+         </div>
+         
+         
+       <div class="fourteen columns" >
+              <section id="comments-sec">
+                  <!-- Number of comments posted-->
+                  <h5 >Comments (4)</h5>
+                  
+                  <ol class="comment-list">
+                  
+                      <li class="comment">
+                          <article> 
+                              <!-- author -->
+                              <img src="images/post_aut_1.jpg" alt="Image" class="avatar">
+                              <div class="comment-aut">
+                                  <a class="author text_hover">Aline marke</a>
+                                  <p class="date">july 17, 2012</p>
+                              </div>
+                              <!-- author comment -->
+                              <div class="comment-area">
+                                  <p>Maecenas sed justo varius velit imperdiet bibendum. commodo tristique odio. quis fringilla ligula aliquet ut. Maecenas sed justo varius velit imperdiet bibendum.</p>
+                              </div>
+                          </article>
+                          
+                          <ul class="children">
+                            <li class="comment">
+                              <article> 
+                                  <!-- author -->
+                                  <img src="images/post_aut_2.jpg" alt="Image" class="avatar">
+                                  <div class="comment-aut">
+                                      <a class="author text_hover">Steve john</a>
+                                      <p class="date">july 17, 2012</p>
+                                  </div>
+                                  <!-- author comment -->
+                                  <div class="comment-area">
+                                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius</p>
+                                  </div>
+                              </article>
+                            </li>
+                          </ul>
+                      </li>
+                        
+                        
+                      <li class="comment">
+                          <article> 
+                              <!-- author -->
+                              <img src="images/post_aut_2.jpg" alt="Image" class="avatar">
+                              <div class="comment-aut">
+                                  <a class="author text_hover">Steve john</a>
+                                  <p class="date">jun 7, 2012</p>
+                              </div>
+                              <!-- author comment -->
+                              <div class="comment-area">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo est usus legentis in iis qui facit eorum claritatem.</p>
+                              </div>
+                          </article>
+                      </li>
+                        
+                      <li class="comment">
+                          <article> 
+                              <!-- author -->
+                              <img src="images/post_aut_1.jpg" alt="Image" class="avatar">
+                              <div class="comment-aut">
+                                  <a class="author text_hover">Aline marke</a>
+                                  <p class="date">jun 5, 2012</p>
+                              </div>
+                              <!-- author comment -->
+                              <div class="comment-area">
+                                  <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.</p>
+                              </div>
+                          </article>
+                      </li>
+                        
+                  </ol>
+              </section>
+      
+      
+              <section id="comment-replay" class="">
+                  <h5>Leave a Comment</h5>
+                  <!-- Add comment Form field -->
+                  <form method="post" class="comments-form">
+                          
+                      <label for="comment-name"><strong>Name</strong> (required)</label>
+                      <input type="text" name="name" value="" id="comment-name" />
+                      <br>
+                         
+                      <label for="comment-email"><strong>Email</strong> (required)</label>
+                      <input type="email" name="email" value="" id="comment-email" />
+                      <br>
+                         
+                      <label for="comment-url"><strong>Website</strong></label>
+                      <input type="url" name="url" value="" id="comment-url" />
+                      <br>
+                         
+                      <label for="comment-message"><strong>Your Comment</strong> (required)</label>
+                      <textarea name="message" id="comment-message" cols="88" rows="6" required></textarea>
+                      <br>
+                      
+                      <a class="alignRight" href="#!" ><span class="button">Submit</span></a>
+          
+                      <div class="clear"></div>
+          
+                  </form>
+              </section>
+                  
+		</div>
+    	
+		<div class="page_bottom_spacing"></div> 
+        
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+</div>                   
+</body>
+</html>
