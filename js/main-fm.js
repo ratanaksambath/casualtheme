@@ -1606,7 +1606,7 @@
 
 			// Change the default image in img tag, if mobile version(data-src-small) image is assign on the img tag
 			if(self.pageLoaded){
-				self.bdy.find('img').each(function() {
+				self.bdy.find('img').not('.logo__img').each(function() {
 					if($(this).attr('data-src-small')){
 						if(!self.mobile || !$(this).attr('data-src-small')){
 							var img_Src = $(this).data('src').split(".");
