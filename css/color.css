@@ -51,11 +51,11 @@
 
 	.loading {
 		background: url(../images/loading_white.gif) no-repeat center center;
-		background-image: -Webkit-image-set(url(../images/loading_white.gif) 1x, url(../images/loading_white@2x.gif) 2x);  /* Image for Retina */
+		background-image: -Webkit-image-set(url(../images/loading_white.gif) 1x, url(../images/loading_white--2x.gif) 2x);  /* Image for Retina */
 		}
 	.white_ver .loading {
 		background: url(../images/loading.gif) no-repeat center center;
-		background-image: -Webkit-image-set(url(../images/loading.gif) 1x, url(../images/loading@2x.gif) 2x);  /* Image for Retina */
+		background-image: -Webkit-image-set(url(../images/loading.gif) 1x, url(../images/loading--2x.gif) 2x);  /* Image for Retina */
 		}
 
 	.scrollBar{
@@ -268,7 +268,7 @@ a.info:hover {
 
 .share{
 	background: url(../images/tag_arrow.png) no-repeat right center;
-	background-image: -Webkit-image-set(url(../images/tag_arrow.png) 1x, url(../images/tag_arrow@2x.png) 2x);  /* Image for Retina */
+	background-image: -Webkit-image-set(url(../images/tag_arrow.png) 1x, url(../images/tag_arrow--2x.png) 2x);  /* Image for Retina */
 	}
 .share span{
 	color:#FFF;
@@ -278,7 +278,7 @@ a.info:hover {
 
 .share.light{
 	background: url(../images/tag_arrow_light.png) no-repeat right center;
-	background-image: -Webkit-image-set(url(../images/tag_arrow_light.png) 1x, url(../images/tag_arrow_light@2x.png) 2x);  /* Image for Retina */
+	background-image: -Webkit-image-set(url(../images/tag_arrow_light.png) 1x, url(../images/tag_arrow_light--2x.png) 2x);  /* Image for Retina */
 	}
 .share.light span{
 	color:#000;
@@ -287,7 +287,7 @@ a.info:hover {
 
 .share.high_light{
 	background: url(../images/tag_arrow_highlight.png) no-repeat right center;
-	background-image: -Webkit-image-set(url(../images/tag_arrow_highlight.png) 1x, url(../images/tag_arrow_highlight@2x.png) 2x);  /* Image for Retina */
+	background-image: -Webkit-image-set(url(../images/tag_arrow_highlight.png) 1x, url(../images/tag_arrow_highlight--2x.png) 2x);  /* Image for Retina */
 	}
 .share.high_light span{
 	color:#000;

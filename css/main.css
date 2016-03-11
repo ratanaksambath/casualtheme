@@ -1,35 +1,35 @@
 /**
 	casual - Responsive Retina Ready HTML Template
- 	Copyright (c) 2013, Subramanian 
+ 	Copyright (c) 2013, Subramanian
 
 	Author: Subramanian
     Profile: themeforest.net/user/FMedia/
-	
+
     Version: 1.0.0
 	Release Date: June 2013
-	
+
 **/
 
 
 body{
 	margin:0px 0px 0px 0px;
 	padding: 0px 0px 0px 0px;
-	overflow:hidden;  
+	overflow:hidden;
 	}
 
 html, body {
 		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 
-	
+
 	#bodyContent {
 		position:relative; clear:both; z-index:998; width:auto;
 	}
-	
+
 		#backArea	{ position:absolute; top:0px; left:0px; width:5px; z-index:999 !important; }
-		
+
 		#fsTextWarp{ position:absolute;top:0px; left:0px; overflow:hidden; width:5px; z-index:-1; }
-		
+
 		/* main container */
 		.mainContainer{
 			position: relative;
@@ -42,7 +42,7 @@ html, body {
 			padding:0px;
 		}
 
-		
+
 		.header{
 			width:100%;
 			position:fixed;
@@ -52,19 +52,19 @@ html, body {
 			top:0px;
 			z-index:10003;
 			}
-		
+
 	/* Header style. The menu style are placed here */
-				
+
 		.header .nav{
-			float: right; display: inline; 
-			margin-left: 0px; 
+			float: right; display: inline;
+			margin-left: 0px;
 			margin-right: 10px;
 			margin-top:14px;
 			position:relative;
 			}
-				
+
 			/*.header .nav ul{ display:none; }*/
-				
+
 			.header .nav ul li{
 				float:left;
 				left:0px;
@@ -73,7 +73,7 @@ html, body {
 				cursor:pointer ;
 				list-style:none;
 				}
-				
+
 				.header .nav ul li a{
 					height:100%;
 					padding:10px 15px 20px 15px;
@@ -81,7 +81,7 @@ html, body {
 					text-align:center;
 					cursor:pointer ;
 					}
-				
+
 				.header .nav ul li ul {
 					position:absolute;
 					top:0px;
@@ -95,7 +95,7 @@ html, body {
 					padding-top:0px;
 					line-height:0px;
 					}
-					
+
 				.header .nav ul li ul li {
 					position:relative;
 					float:none;
@@ -103,32 +103,32 @@ html, body {
 					cursor:pointer ;
 					list-style:none;
 					}
-					
+
 				.header .nav ul li ul li a{
 					padding:10px 15px 10px 15px;
 					}
-				
+
 				.header .nav ul li ul li a.first{ padding:20px 15px 10px 15px; }
 				.header .nav ul li ul li a.last{ padding:10px 15px 20px 15px; }
-				
+
 				.header .nav ul li a{
-					
-					-webkit-transition-property:color, background;   
- 					-webkit-transition-duration: .2s, .2s;   
+
+					-webkit-transition-property:color, background;
+ 					-webkit-transition-duration: .2s, .2s;
  					-webkit-transition-timing-function: linear, ease-in;
-					
-					-moz-transition-property:color, background;   
- 					-moz-transition-duration: .2s, .2s;   
+
+					-moz-transition-property:color, background;
+ 					-moz-transition-duration: .2s, .2s;
  					-moz-transition-timing-function: linear, ease-in;
-					
-					-o-transition-property:color, background;   
- 					-o-transition-duration: .2s, .2s;   
+
+					-o-transition-property:color, background;
+ 					-o-transition-duration: .2s, .2s;
  					-o-transition-timing-function: linear, ease-in;
-					
-					-ms-transition-property:color, background;   
- 					-ms-transition-duration: .2s, .2s;   
+
+					-ms-transition-property:color, background;
+ 					-ms-transition-duration: .2s, .2s;
  					-ms-transition-timing-function: linear, ease-in;
-	
+
 					}
 
 				.highlight{
@@ -141,7 +141,7 @@ html, body {
 
 					z-index:0;
 				}
-				
+
 				.header .topContact {
 					float: right; display: inline; margin-top: 15px; margin-right: 10px;
 					width: 180px;
@@ -150,11 +150,11 @@ html, body {
 
 				.header li a, .header li a:visited { color:inherit; text-decoration: none; outline: 0; }
 				.header li a:hover, .header li a:focus { color:inherit; }
-				.header li a:visited { color:inherit; text-decoration: none; }	
-				
+				.header li a:visited { color:inherit; text-decoration: none; }
+
 				/* tiny nav */
 				.tinynav {
-					display: none; 
+					display: none;
 					width:auto;
 					right:5px;
 					height: 28px;
@@ -163,38 +163,38 @@ html, body {
 					padding: 4px;
 					color: #2e2e2e;
 				}
-			
-				.pageFade { 
-					width:100%; 
-					height:100%;					
-					top:0px;  
+
+				.pageFade {
+					width:100%;
+					height:100%;
+					top:0px;
 					left:0;
-					position:fixed; 
+					position:fixed;
 					z-index:1000000 !important;
 					overflow:hidden;
-				 } 
-				 
-				
+				 }
+
+
 				.open_loading{
 					height:32px;
-					width:32px; 				
+					width:32px;
 					overflow:hidden;
 					position:fixed;
 					top:50%;
 					left:50%;
 					margin-left:-15px;
 					margin-top:-15px;
-					
+
 					background-image: url(../images/loading_white.gif) ;
 					background-position: center center;
 					background-repeat: no-repeat;
-					background-image: -Webkit-image-set(url(../images/loading_white.gif) 1x, url(../images/loading_white@2x.gif) 2x);  /* Image for Retina */
+					background-image: -Webkit-image-set(url(../images/loading_white.gif) 1x, url(../images/loading_white--2x.gif) 2x);  /* Image for Retina */
 
 				}
-				
+
 		/* Footer style */
-		
-		
+
+
 		.footer {
 			position: fixed;
 			width:100%;
@@ -204,36 +204,36 @@ html, body {
 			bottom: 0px;
 			z-index:9999;
 			}
-			
+
 		.footer .container{
 			margin: 0 auto;
 			top:0px;
-			bottom:0px;			
+			bottom:0px;
 			}
-			
+
 		.footer .container .bottomText{
 			margin-top:10px;
 			}
-		
+
 		.footer .footerHolder{
 			padding-top:10px;
 			padding-bottom:10px;
 		}
-		
-		
+
+
 		/* Logo and page content style*/
 		.contentWarp{
-			width:100%; 
+			width:100%;
 			overflow-x:hidden;
 			overflow-y:hidden;
-			position:relative; 
+			position:relative;
 			clear:both;
 			margin:0px 0px 0px 0px;
 			padding: 0px 0px 0px 0px;
 			z-index:997
 		}
 
-		.logo { 
+		.logo {
 			position:relative;
 			width:210px;
 			height:60px;
@@ -246,83 +246,83 @@ html, body {
 				max-width:190px;
 				height:auto;
 				}
-		
-		
+
+
 		/* backgroundColor  */
-			
+
 			.backgroundColor{
 				position:fixed;
 				width:100%;
 				height:100%;
-				z-index:1;		
+				z-index:1;
 			}
-			
+
 
 
 /* page scroll up button */
-	
+
 	.pgScrollUp{
-		position:fixed; 
-		width:30px; 
-		height:30px;		
+		position:fixed;
+		width:30px;
+		height:30px;
 		top: auto;
   		left: auto;
  	 	right: 10px;
-  		bottom: 70px;		 
+  		bottom: 70px;
 		overflow:hidden;
 		cursor:pointer;
 		z-index:19999999997;
 		display: none;
 		background-image : url(../images/scrollup.png);
-  		background-image: -Webkit-image-set(url(../images/scrollup.png) 1x, url(../images/scrollup@2x.png) 2x);  /* Image for Retina */
+  		background-image: -Webkit-image-set(url(../images/scrollup.png) 1x, url(../images/scrollup--2x.png) 2x);  /* Image for Retina */
 		background-position: 0% 100%;
 		background-repeat:no-repeat;
-		
-		-webkit-transition-property:color, background;   
-		-webkit-transition-duration: .2s, .2s;   
+
+		-webkit-transition-property:color, background;
+		-webkit-transition-duration: .2s, .2s;
 		-webkit-transition-timing-function: linear, ease-in;
-		
-		-moz-transition-property:color, background;   
-		-moz-transition-duration: .2s, .2s;   
+
+		-moz-transition-property:color, background;
+		-moz-transition-duration: .2s, .2s;
 		-moz-transition-timing-function: linear, ease-in;
-		
-		-o-transition-property:color, background;   
-		-o-transition-duration: .2s, .2s;   
+
+		-o-transition-property:color, background;
+		-o-transition-duration: .2s, .2s;
 		-o-transition-timing-function: linear, ease-in;
-		
-		-ms-transition-property:color, background;   
-		-ms-transition-duration: .2s, .2s;   
+
+		-ms-transition-property:color, background;
+		-ms-transition-duration: .2s, .2s;
 		-ms-transition-timing-function: linear, ease-in;
-					
+
 		}
-	
+
 	.white_ver .pgScrollUp{
 		background-position: 100% 0%;
 	}
-	
-	
-	
+
+
+
 /* Enable hardware Acceleration */
-	.enablHardwareAcc {  
+	.enablHardwareAcc {
 		-webkit-backface-visibility: hidden;
   		-webkit-perspective: 1000;
 		-webkit-transform: translateZ(0);
 		}
-	.scroll-pane {  
+	.scroll-pane {
 		-webkit-backface-visibility: hidden;
   		-webkit-perspective: 1000;
 		-webkit-transform: translateZ(0);
 		}
-		
-		
+
+
 .fullWidthHeader { width:100% !important; }
 
 .fullWidthHeader .logo { line-height:0px !important;}
 
-.fullWidthHeader .nav { margin-right:10px;  }	
+.fullWidthHeader .nav { margin-right:10px;  }
 
-.fullWidthFooter { width:100% !important; }	
-	
+.fullWidthFooter { width:100% !important; }
+
 /*
 
 
@@ -356,7 +356,7 @@ html, body {
 .jspDrag{
 	position: relative;
 	top: 0; left: 0; cursor: pointer; margin:1px 0px 0px 0px;
-	
+
 	-moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     -khtml-border-radius: 20px;
@@ -376,23 +376,23 @@ html, body {
 /* Yuk! CSS Hack for IE6 3 pixel bug :( */
 * html .jspCorner { margin: 0 -3px 0 0; }
 
-/* Site loading style */	
-.loading {	
+/* Site loading style */
+.loading {
 	height:32px;
-	width:32px; 
+	width:32px;
 	position:fixed;
 	visibility:hidden;
-	
+
 	overflow:hidden;
 	z-index:1000001;
 }
 
 
-/* Email loading style */		
+/* Email loading style */
 .email_loading {
 	background: url(../images/loading_white.gif) no-repeat center center;
 	height:32px;
-	width:32px; 
+	width:32px;
 	position:absolute;
 	z-index:0;
 }
@@ -400,7 +400,7 @@ html, body {
 /* flex slider loading  */
 .slider_loading {
 	height:32px;
-	width:32px; 
+	width:32px;
 	position:relative;
 	display:block;
 	z-index:102;
@@ -409,54 +409,54 @@ html, body {
 
 .slider_loading {
 	background: url(../images/loader.gif) no-repeat center center;
-	background-image: -Webkit-image-set(url(../images/loader.gif) 1x, url(../images/loader@2x.gif) 2x);  /* Image for Retina */
-	}
-	
-.lightStyle .slider_loading {
-	background: url(../images/loader_white.gif) no-repeat center center;
-	background-image: -Webkit-image-set(url(../images/loader_white.gif) 1x, url(../images/loader_white@2x.gif) 2x);  /* Image for Retina */
+	background-image: -Webkit-image-set(url(../images/loader.gif) 1x, url(../images/loader--2x.gif) 2x);  /* Image for Retina */
 	}
 
-.fsLoading {	
+.lightStyle .slider_loading {
+	background: url(../images/loader_white.gif) no-repeat center center;
+	background-image: -Webkit-image-set(url(../images/loader_white.gif) 1x, url(../images/loader_white--2x.gif) 2x);  /* Image for Retina */
+	}
+
+.fsLoading {
 	height:30px;
-	width:30px; 
+	width:30px;
 	position:absolute;
 	z-index:1000000;
 	zoom: 1;
-	
+
 	top:77px;
 	right:150px;
 }
 
 
-.fsLoading {	
+.fsLoading {
 	background: url(../images/loader_white.gif) no-repeat center center;
-	background-image: -Webkit-image-set(url(../images/loader_white.gif) 1x, url(../images/loader_white@2x.gif) 2x);  /* Image for Retina */
+	background-image: -Webkit-image-set(url(../images/loader_white.gif) 1x, url(../images/loader_white--2x.gif) 2x);  /* Image for Retina */
 	}
 
-.white_ver .fsLoading {	
+.white_ver .fsLoading {
 	background: url(../images/loader.gif) no-repeat center center;
-	background-image: -Webkit-image-set(url(../images/loader.gif) 1x, url(../images/loader@2x.gif) 2x);  /* Image for Retina */
+	background-image: -Webkit-image-set(url(../images/loader.gif) 1x, url(../images/loader--2x.gif) 2x);  /* Image for Retina */
 	}
 
 
-/* Email reply message style */	
+/* Email reply message style */
 #reply_message { position:relative; left:20px; text-align:left; float:left; }
-	
+
 
 /* full size and medium size content scrollbar*/
 .medium_size  { height: 280px; overflow:hidden  }
 .full_size  { height: 420px; overflow:hidden }
 
-	
+
 /* vegas style */
 .vegas-loading {
 
 	background: url(images/loading.gif) no-repeat center center;
 	background: url(../images/loading.gif) no-repeat center center;
-	background-image: -Webkit-image-set(url(../images/loading.gif) 1x, url(../images/loading@2x.gif) 2x);  /* Image for Retina */
+	background-image: -Webkit-image-set(url(../images/loading.gif) 1x, url(../images/loading--2x.gif) 2x);  /* Image for Retina */
 	height:32px;
-	width:32px; 
+	width:32px;
 	position:absolute;
 	z-index:0;
 }
@@ -467,13 +467,13 @@ html, body {
 	opacity:0.5;
 	z-index:-1;
 }
-	
+
 .vegas-background {
 	image-rendering: optimizeQuality;
 	-ms-interpolation-mode: bicubic;
 	position:absolute;
 	overflow:hidden;
-	z-index:-3;		
+	z-index:-3;
 }
 
 /* Text animate */
@@ -486,20 +486,20 @@ html, body {
 .graph_container li.last { margin:0; }
 .graph_container li span { position:absolute; z-index:1; margin:5px 0px 0px 10px; padding:0px; color:#000; font-size:15px; }
 .graph_container li a { position:absolute; left:0; width:0px; height:30px; cursor:auto }
-	
-	
+
+
 
 /**** portfolio image Initialize ****/
-								 
+
 /* Start: Recommended Isotope styles */
-	
+
 /**** Isotope Filtering ****/
-	
+
 .isotope-item { z-index: 2; }
 .isotope-hidden.isotope-item {  pointer-events: none; z-index: 1; }
-	
+
 /**** Isotope CSS3 transitions ****/
-	
+
 .isotope,
 .isotope .isotope-item {
   -webkit-transition-duration: 0.8s;
@@ -508,7 +508,7 @@ html, body {
 	   -o-transition-duration: 0.8s;
 		  transition-duration: 0.8s;
 }
-	
+
 .isotope {
   -webkit-transition-property: height, width;
 	 -moz-transition-property: height, width;
@@ -516,7 +516,7 @@ html, body {
 	   -o-transition-property: height, width;
 		  transition-property: height, width;
 }
-	
+
 .isotope .isotope-item {
   -webkit-transition-property: -webkit-transform, opacity;
 	 -moz-transition-property:    -moz-transform, opacity;
@@ -525,9 +525,9 @@ html, body {
 		  transition-property:         transform, opacity;
 }
 
-	
+
 /**** disabling Isotope CSS3 transitions ****/
-	
+
 .isotope.no-transition,
 .isotope.no-transition .isotope-item,
 .isotope .isotope-item.no-transition {
@@ -537,10 +537,10 @@ html, body {
 	   -o-transition-duration: 0s;
 		  transition-duration: 0s;
 }
-	
+
 /* End: Recommended Isotope styles */
-	
-	
+
+
 /* disable CSS transitions for containers with infinite scrolling*/
 .isotope.infinite-scrolling {
   -webkit-transition: none;
@@ -549,7 +549,7 @@ html, body {
 	   -o-transition: none;
 		  transition: none;
 }
-	
+
 /**** isotope image Initialize ****/
 .isotope_items 			{ overflow:hidden; padding-bottom:25px; }
 .isotope_items img 		{ display: block;  width: 100%; }
@@ -559,14 +559,14 @@ html, body {
 .isotope_items .small 	{ width: 138px; height:auto; }
 
 .isotope_items .large .portImg{ height:153px !important; }
-.isotope_items .medium .portImg{ height:113px !important; }	
-.isotope_items .small .portImg{ height:92px !important; }	
+.isotope_items .medium .portImg{ height:113px !important; }
+.isotope_items .small .portImg{ height:92px !important; }
 
 /* End Isotope*/
-	
-	
-	
-	
+
+
+
+
 
 /* Masonry Style */
 
@@ -575,7 +575,7 @@ html, body {
 .item {
   width: 33.2%;
   float: left;
-  
+
 }
 
 /* images cover up the gap */
@@ -640,26 +640,26 @@ html, body {
 .noSpacing { margin:0px; }
 
  .videoLeftSpacing { padding-left:20px; }
- 
+
 .pageHidden{
 	width:300px;
 	height:50px;
 	position:absolute;
 	overflow:hidden;
 }
-	
+
 .pageShow{
 	width:auto;
 	height:auto;
 	position:relative;
 	overflow:visible;
-}	
+}
 
 .isotope_option { position:relative; float: right; display:none; }
 #options{ margin-right:5px; }
 
  .scroll-pane { width:auto; }
- 
+
 /* Hand cursor */
 
 .fm_drag-cursor{cursor:move;}
@@ -671,7 +671,7 @@ html, body {
 .fm_draging-cursor{cursor:url("../images/cursors/closedhand.png") 8 8,-moz-grabbing;}
 .fm_draging-cursor{*cursor:url(../images/cursors/closedhand.cur);}
 .fm_draging-cursor{cursor:url(images/cursors/closedhand.cur);}
- 
+
 .proPadLef { padding-left:20px; }
 
 
@@ -679,54 +679,54 @@ html, body {
 /* Note: Design for a width of 768px */
 
 @media only screen and (min-width: 768px) and (max-width: 1150px) {
-	
+
 	#bodyContent .flex-caption { visibility:visible}
-	
+
 	.jspVerticalBar { width: 5px; }
-	
+
 	.logo { width:110px; }
 	.logo img{
 		max-width:110px;
 		height:auto;
 		}
-	
-	#options{ margin-right:5px;}	
-	
+
+	#options{ margin-right:5px;}
+
 	/* Header - Menu style */
 	.header .nav ul{ position:inherit; top:0px; display:block;  z-index:inherit; }
-	.header .nav li{ float:left; margin:0px;  }	
+	.header .nav li{ float:left; margin:0px;  }
 	.header .nav ul li  a{ padding:12px 15px 0px 15px; }
-	
+
 	.header .nav ul li ul li a.first{ margin-top:18px; }
 
 	.header .highlight{ display:block; }
 	.header .topContact { width: 160px;  margin-top: 10px; }
-	
-	
-	
+
+
+
 	.highlight { margin-top: 22px; }
-	
+
 	/* full screen gallery */
 	#fsGalNex{ right:-10px;  top:30px; }
 	#fsGalPre{ left:-3px; top:30px; }
-	
+
 	.proPadLef { padding-left:20px; }
-	
+
 	#options{ margin-right:50px;}
-	
+
 	.videoLeftSpacing { padding-left:20px; }
-	
-	.pgScrollUp{ bottom:70px; }	
+
+	.pgScrollUp{ bottom:70px; }
 
 }
 
 
 
 /* Note: Design for a width of 320px */
-@media only screen and (max-width: 767px) {		
+@media only screen and (max-width: 767px) {
 	body{ overflow-x:hidden; overflow-y: auto; }
-	
-	.tinynav { 
+
+	.tinynav {
 		display: inline-block ;
 		overflow: hidden;
 		float:right;
@@ -735,9 +735,9 @@ html, body {
 		top:5px;
 		padding-bottom:5px;
 		}
-	
+
 	.highlight {display: none; visibility:hidden }
-	
+
 	.logo { width:120px; height:44px; top:0px; position:absolute  }
 	.logo img{
 		max-width:144px;
@@ -747,23 +747,23 @@ html, body {
 	/* Header - Menu style */
 	.header{ position:relative; margin-top:0px; margin-bottom:0px; padding:0px;}
 	.header .nav{ margin-top:7px; margin-bottom:0px; }
-	
-	
+
+
 
 	.medium_size { height: 100%;  }
 	.full_size { height: 100%;  margin-top:10px;  }
 
 	.video_content { width:280px; height:120px;}
-		
+
 	#flexslider-container {max-width: 320px; height:100%; margin: 0px}
 	#flexslider-container img{ width:100%; max-height:100% }
 	#bodyContent .flex-caption { visibility:hidden}
 	#flexslider-container .flex-control-nav { position:relative; bottom: -15px;}
 	#flexslider-container .flex-direction-nav { visibility:hidden }
-	
+
 	.isotope_option {  width:100% float:left;  }
 	#options{ margin-right:-10px;}
-	
+
 	/* full screen gallery */
 	.fs_gallery{ left:7px;  }
 	.fs_thumbs{ width:265px; }
@@ -775,15 +775,15 @@ html, body {
 		top:auto;
 		right:5px;
 		}
-	
-	.scroll-pane { height: auto; overflow: visible; }	
-	
+
+	.scroll-pane { height: auto; overflow: visible; }
+
 	.proPadLef { padding-left:0px; }
-	
+
 	.videoLeftSpacing { padding-left:0px; }
-	
+
 	.footer { position: relative; padding-bottom:0px;}
-	
+
 	.footer .container .bottomText{
 			margin-left:10px;
 		}
@@ -792,16 +792,16 @@ html, body {
 		margin-left:10px;
 		}
 }
- 
+
 
 /* Note: Design for a width of 480px */
-@media only screen and (min-width: 480px) and (max-width: 767px) {		
+@media only screen and (min-width: 480px) and (max-width: 767px) {
 	body{ overflow-x:hidden; overflow-y: auto; }
-	
+
 	.tinynav { width:auto; }
 
 	.highlight {display: none; visibility:hidden }
-	
+
 	.logo { width:auto; height:50px; top:0px; padding:0px 0px 0px 0px; position:relative}
 	.logo img{
 		max-width:150px;
@@ -810,39 +810,39 @@ html, body {
 	/* Header - Menu style */
 	.header{ position:relative; }
 	.header .nav{ margin-top:9px; margin-bottom:0px; }
-	
-	
+
+
 	.footer { position: relative;}
 
 
 	/* full size and medium size content scrollbar*/
 	.medium_size { height: 100%;  }
 	.full_size  { height: 100%;   margin-top:10px;  }
-			
+
 	.mainContainer{ overflow-y:hidden; }
 	.video_content { width:400px; height:165px;}
-		
+
 	#flexslider-container {width: 460px; max-height:100%; margin: 20px}
 	#flexslider-container img{ width:100%; max-height:100% }
 	#bodyContent .flex-caption { visibility:hidden}
 	#flexslider-container .flex-control-nav { position:relative; bottom: -15px;}
 	#flexslider-container .flex-direction-nav { visibility:hidden; }
-	
+
 	.isotope_option { width:400px;  float:left;}
 	#options{ margin-right:-10px;}
 	.isotope_items{ left:10px;}
-	
+
 	/* full screen gallery */
 	.fs_gallery{ left:5px; }
 	.fs_thumbs{ width:390px; }
 	#fsCloGal{ right: -5px;  top: 25px; }
 	#fsGalNex{ right:-10px; top:55px; }
-	#fsGalPre{ left: -5px; top:55px; }	
-	
+	#fsGalPre{ left: -5px; top:55px; }
+
 	.scroll-pane { height: auto; overflow: visible; }
-	
+
 	.proPadLef { padding-left:0px; }
-	
+
 	.videoLeftSpacing { padding-left:0px; }
 
 }

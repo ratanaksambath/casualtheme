@@ -1610,7 +1610,7 @@
 					if($(this).attr('data-src-small')){
 						if(!self.mobile || !$(this).attr('data-src-small')){
 							var img_Src = $(this).data('src').split(".");
-							var iimg = $(this).attr('data-retina') === "yes" && retinaDevice ? img_Src[0]+"@2x."+ img_Src[1] : $(this).data('src');
+							var iimg = $(this).attr('data-retina') === "yes" && retinaDevice ? img_Src[0]+"--2x."+ img_Src[1] : $(this).data('src');
 								if(String($(this).attr('src')) !== iimg){
 									$(this).attr("src", iimg);
 									$(this).data("i_src",$(this).data('src'));
@@ -1618,7 +1618,7 @@
 						}else{
 							if($(this).attr('data-src-small')){
 								img_Src = $(this).attr('data-src-small').split(".");
-								iimg = $(this).attr('data-retina') === "yes" && retinaDevice ? img_Src[0]+"@2x."+ img_Src[1] : $(this).attr('data-src-small');
+								iimg = $(this).attr('data-retina') === "yes" && retinaDevice ? img_Src[0]+"--2x."+ img_Src[1] : $(this).attr('data-src-small');
 								if(String($(this).attr('src')) !== String($(this).attr('data-src-small')) && String($(this).attr('src')) !== iimg){
 									$(this).attr("src",iimg);
 									$(this).data("i_src",$(this).attr('data-src-small'));
