@@ -1,0 +1,46 @@
+.header .headerHold {
+  border-bottom: none;
+  margin-bottom: 10px;
+}
+.header .headerHold--nav {
+  margin-bottom: 0;
+}
+.header .headerHold--nav .fullWidthHeader {
+  margin-left: 5px;
+}
+.header .nav {
+  float: left;
+  margin-top: 0;
+}
+.header .nav ul {
+  display: block;
+  margin-bottom: 0;
+}
+.header .nav ul li a {
+  padding: 10px;
+}
+.header .highlight {
+  padding: 0 10px 10px 10px;
+  margin-top: 7px;
+}
+
+@media only screen and (max-width: 767px) {
+  .header .headerHold {
+    margin-bottom: 0;
+  }
+  .header .headerHold .logo {
+    position: relative;
+  }
+  .header .headerHold--nav {
+    margin-top: 10px;
+  }
+  .header .headerHold--nav .fullWidthHeader {
+    margin-left: 15px;
+  }
+  .header .nav ul {
+    display: block !important;
+  }
+  .header .tinynav {
+    display: none !important;
+  }
+}
