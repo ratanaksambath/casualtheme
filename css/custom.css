@@ -23,6 +23,17 @@
   padding: 0 10px 10px 10px;
   margin-top: 7px;
 }
+.logo img{
+  max-width: 183px;
+  height: 89%;
+  padding-bottom: 7px;
+  padding-left: 15px;
+}
+#welcome-text{
+    float: right;
+    padding-top: 500px;
+    padding-right: 600px;
+}
 
 @media only screen and (max-width: 767px) {
   .header .headerHold {
@@ -43,4 +54,8 @@
   .header .tinynav {
     display: none !important;
   }
+  #welcome-text{
+    padding: 80px;
+  }
+
 }
