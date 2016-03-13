@@ -46,7 +46,7 @@ div.jp-audio {
 		height:45px;
 		margin-left:0px;
 	}
-	
+
 }
 div.jp-audio-stream {
 	width:90px;
@@ -94,7 +94,7 @@ div.jp-video-full div.jp-interface {
 
 div.jp-interface {
 	position: relative;
-	
+
 	width:100%;
 }
 
@@ -270,7 +270,7 @@ a.jp-unmute {
 
 div.jp-audio div.jp-type-single a.jp-mute,
 div.jp-audio div.jp-type-single a.jp-unmute {
-	margin-left: 10px;	
+	margin-left: 10px;
 }
 div.jp-audio div.jp-type-playlist a.jp-mute,
 div.jp-audio div.jp-type-playlist a.jp-unmute {
@@ -289,7 +289,7 @@ div.jp-audio-stream a.jp-volume-max {
 	margin-left: 70px;
 	width:28px;
 	height:28px;
-	visibility:hidden;	
+	visibility:hidden;
 }
 
 div.jp-video a.jp-mute,
@@ -303,7 +303,7 @@ div.jp-video a.jp-volume-max {
 div.jp-video a.jp-mute,
 div.jp-video a.jp-unmute {
 	left: 50px;
-	
+
 }
 
 div.jp-video a.jp-volume-max {
@@ -339,7 +339,7 @@ div.jp-volume-bar {
 	cursor: pointer;
 }
 div.jp-audio div.jp-volume-bar {
-	top:4px;	
+	top:4px;
 	margin-left:136px;
 }
 
@@ -463,7 +463,7 @@ div.jp-type-playlist div.jp-playlist a:hover {
 
 }
 div.jp-type-playlist div.jp-playlist a.jp-playlist-current {
-	
+
 }
 
 div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove {
@@ -472,7 +472,7 @@ div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove {
 	text-align:right;
 	margin-right:10px;
 	font-weight:bold;
-	
+
 }
 div.jp-type-playlist div.jp-playlist a.jp-playlist-item-remove:hover {
 
@@ -522,7 +522,7 @@ a.jp-video-play-icon {
 	margin-left:-56px;
 	margin-top:-50px;
 	left:50%;
-	top:50%;	
+	top:50%;
 	background: url("jplayer.blue.monday.video.play.png") 0 0 no-repeat;
 	text-indent:-9999px;
 }
@@ -664,51 +664,51 @@ a.jp-shuffle-off:hover {
 }
 
 
-a.jp-play, a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:hover, 
-a.jp-previous, a.jp-previous:hover, a.jp-next, a.jp-next:hover, 
+a.jp-play, a.jp-play:hover, a.jp-pause, a.jp-pause:hover, a.jp-stop, a.jp-stop:hover,
+a.jp-previous, a.jp-previous:hover, a.jp-next, a.jp-next:hover,
 div.jp-seeking-bg, a.jp-mute, a.jp-mute:hover, a.jp-unmute, a.jp-unmute:hover,
-a.jp-volume-max, a.jp-volume-max:hover, a.jp-full-screen, a.jp-full-screen:hover, 
-a.jp-restore-screen, a.jp-restore-screen:hover, 
-a.jp-repeat, a.jp-repeat:hover, a.jp-repeat-off, a.jp-repeat-off:hover, 
+a.jp-volume-max, a.jp-volume-max:hover, a.jp-full-screen, a.jp-full-screen:hover,
+a.jp-restore-screen, a.jp-restore-screen:hover,
+a.jp-repeat, a.jp-repeat:hover, a.jp-repeat-off, a.jp-repeat-off:hover,
 a.jp-shuffle, a.jp-shuffle:hover, a.jp-shuffle-off, a.jp-shuffle-off:hover{
 	background-repeat: no-repeat;
 	background-image: url("../images/jplayer.white.png");
-	background-image: -Webkit-image-set(url(../images/jplayer.white.png) 1x, url(../images/jplayer.white@2x.png) 2x);  /* Image for Retina */
+	background-image: -Webkit-image-set(url(../images/jplayer.white.png) 1x, url(../images/jplayer.white--2x.png) 2x);  /* Image for Retina */
 }
 
 div.jp-seek-bar, div.jp-play-bar, div.jp-volume-bar, div.jp-volume-bar-value{
 	background-repeat:repeat-x;
 	background-image: url("../images/jplayer.white.png");
-	background-image: -Webkit-image-set(url(../images/jplayer.white.png) 1x, url(../images/jplayer.white@2x.png) 2x);  /* Image for Retina */
+	background-image: -Webkit-image-set(url(../images/jplayer.white.png) 1x, url(../images/jplayer.white--2x.png) 2x);  /* Image for Retina */
 }
 
 
 
-.lightStyle a.jp-play, .lightStyle a.jp-play:hover, .lightStyle a.jp-pause, .lightStyle a.jp-pause:hover, .lightStyle a.jp-stop, .lightStyle a.jp-stop:hover, 
-.lightStyle a.jp-previous, .lightStyle a.jp-previous:hover, .lightStyle a.jp-next, .lightStyle a.jp-next:hover, 
+.lightStyle a.jp-play, .lightStyle a.jp-play:hover, .lightStyle a.jp-pause, .lightStyle a.jp-pause:hover, .lightStyle a.jp-stop, .lightStyle a.jp-stop:hover,
+.lightStyle a.jp-previous, .lightStyle a.jp-previous:hover, .lightStyle a.jp-next, .lightStyle a.jp-next:hover,
 .lightStyle div.jp-seeking-bg, .lightStyle a.jp-mute, .lightStyle a.jp-mute:hover, .lightStyle a.jp-unmute, .lightStyle a.jp-unmute:hover,
-.lightStyle a.jp-volume-max, .lightStyle a.jp-volume-max:hover, .lightStyle a.jp-full-screen, .lightStyle a.jp-full-screen:hover, 
-.lightStyle a.jp-restore-screen, .lightStyle a.jp-restore-screen:hover, 
-.lightStyle a.jp-repeat, .lightStyle a.jp-repeat:hover, .lightStyle a.jp-repeat-off, .lightStyle a.jp-repeat-off:hover, 
+.lightStyle a.jp-volume-max, .lightStyle a.jp-volume-max:hover, .lightStyle a.jp-full-screen, .lightStyle a.jp-full-screen:hover,
+.lightStyle a.jp-restore-screen, .lightStyle a.jp-restore-screen:hover,
+.lightStyle a.jp-repeat, .lightStyle a.jp-repeat:hover, .lightStyle a.jp-repeat-off, .lightStyle a.jp-repeat-off:hover,
 .lightStyle a.jp-shuffle, .lightStyle a.jp-shuffle:hover, .lightStyle a.jp-shuffle-off, .lightStyle a.jp-shuffle-off:hover{
 	background-repeat: no-repeat;
 	background-image: url("../images/jplayer.black.png");
-	background-image: -Webkit-image-set(url(../images/jplayer.black.png) 1x, url(../images/jplayer.black@2x.png) 2x);  /* Image for Retina */
+	background-image: -Webkit-image-set(url(../images/jplayer.black.png) 1x, url(../images/jplayer.black--2x.png) 2x);  /* Image for Retina */
 }
 
 .lightStyle div.jp-seek-bar, .lightStyle div.jp-play-bar, .lightStyle div.jp-volume-bar, .lightStyle div.jp-volume-bar-value{
 	background-repeat:repeat-x;
 	background-image: url("../images/jplayer.black.png");
-	background-image: -Webkit-image-set(url(../images/jplayer.black.png) 1x, url(../images/jplayer.black@2x.png) 2x);  /* Image for Retina */
+	background-image: -Webkit-image-set(url(../images/jplayer.black.png) 1x, url(../images/jplayer.black--2x.png) 2x);  /* Image for Retina */
 }
 div.jp-volume-bar {
-	
+
 }
 div.jp-progress, div.jp-volume-bar {
 	background-color: #a4a4a4;
 	background-color: rgb(225, 225, 225);
 	background-color: rgba(255, 255, 255, 0.25);
-	
+
 }
 
 .lightStyle div.jp-progress, .lightStyle div.jp-volume-bar {
@@ -747,7 +747,7 @@ div.jp-progress, div.jp-volume-bar {
 	-moz-opacity: 0;
 	-khtml-opacity: 0;
 	opacity : 0;
-	
+
 	-webkit-transition: opacity 180ms ease-in-out;
 	-moz-transition: opacity 180ms ease-in-out;
 	-o-transition: opacity 180ms ease-in-out;
