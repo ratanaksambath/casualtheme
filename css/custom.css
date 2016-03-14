@@ -36,7 +36,21 @@ body {
 }
 .header .nav ul li a {
   padding: 10px;
+  font-size: 24px;
+  font-weight: 100;
 }
+.header .nav ul li a:hover{
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header .nav ul li a.active{
+  font-family: "Gotham SSm A", "Gotham SSm B";
+  font-weight: 700 !important;
+  font-style: normal;
+}
+
 .header .highlight {
   display: none !important;
   padding: 0 10px 10px 10px;
@@ -52,6 +66,17 @@ body {
     padding-top: 500px;
     padding-right: 600px;
 }
+.truth-box{
+  max-width: 740px;
+  min-height: 296px;
+}
+.truth-box h2{
+  color:white;
+}
+.truth-content{
+  padding:20px 40px 20px 20px;
+}
+
 
 @media only screen and (max-width: 767px) {
   body {
@@ -61,6 +86,11 @@ body {
   -o-background-size: cover;
   background-size: cover;
   }
+  .header .nav ul li a {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 100;
+  }
   .header .headerHold {
     margin-bottom: 0;
   }
@@ -69,6 +99,9 @@ body {
   }
   .header .headerHold--nav {
     margin-top: 10px;
+  }
+  .header .nav{
+    margin-left: -10px;
   }
   .header .headerHold--nav .fullWidthHeader {
     margin-left: 15px;
@@ -81,6 +114,10 @@ body {
   }
   #welcome-text{
     padding: 80px;
+  }
+  .truth-box{
+    top: 8px;
+    min-width: 352px;
   }
 
 }
