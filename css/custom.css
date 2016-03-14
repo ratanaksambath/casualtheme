@@ -3,7 +3,7 @@ html, body {
   overflow-x: hidden;
 }
 body {
-  background: url('../images/background/image1_s.jpg') no-repeat 90% 50% fixed;
+  background: url('../images/background/image1.jpg') no-repeat 90% 50% fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,6 +16,9 @@ body {
 .header .headerHold {
   border-bottom: none;
   margin-bottom: 10px;
+}
+.header .headerHold--logo .fullWidthHeader{
+  height: 77px;
 }
 .header .headerHold--nav {
   margin-bottom: 0;
@@ -41,9 +44,8 @@ body {
 }
 .logo img{
   max-width: 183px;
-  height: 89%;
-  padding-bottom: 7px;
-  padding-left: 15px;
+  top: 10px;
+  left: 15px;
 }
 #welcome-text{
     float: right;
@@ -52,6 +54,13 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
+  body {
+  background: url('../images/background/image1_s.jpg') no-repeat 90% 50% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
   .header .headerHold {
     margin-bottom: 0;
   }
