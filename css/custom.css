@@ -2,6 +2,17 @@ html, body {
   max-width: 100%;
   overflow-x: hidden;
 }
+body {
+  background: url('../images/background/image1_s.jpg') no-repeat 90% 50% fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.backgroundColor,
+.vegas-background {
+  display: none !important;
+}
 .header .headerHold {
   border-bottom: none;
   margin-bottom: 10px;
