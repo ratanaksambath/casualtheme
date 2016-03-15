@@ -29,6 +29,7 @@ body {
 .header .nav {
   float: left;
   margin-top: 0;
+
 }
 .header .nav ul {
   display: block;
@@ -40,14 +41,7 @@ body {
   font-weight: 100;
 }
 .header .nav ul li a:hover{
-  font-family: "Gotham SSm A", "Gotham SSm B";
   font-weight: 700;
-  font-style: normal;
-}
-
-.header .nav ul li a.active{
-  font-family: "Gotham SSm A", "Gotham SSm B";
-  font-weight: 700 !important;
   font-style: normal;
 }
 
@@ -76,7 +70,45 @@ body {
 .truth-content{
   padding:20px 40px 20px 20px;
 }
-
+.darkBackground{
+  background: rgba(0,0,0,0.50);
+}
+.acc_heading{
+  max-height: 80px;
+}
+.accordion_blog dt .acc_heading h3{
+  margin: 0;
+}
+dd {
+  background-color:#222222;
+  background: rgb(34, 34, 34);
+  background: rgba(0, 0, 0, 0.2);
+}
+.work-thumbnail{
+  width: 150px;
+  height: 74px;
+}
+.b_heading{
+  display:inline-flex;
+}
+.accordion_blog__header_description{
+  padding-left:35px;
+}
+h2{
+  font-size:32px;
+}
+img.scale-with-grid{
+  height: 380px;
+}
+.client__logo__padding{
+  padding-left:70px;
+}
+.darkStyle .accordion_blog dt .acc_heading {
+  background-color: rgba(0,0,0,0.3);
+}
+.darkStyle .accordion_blog dt:hover .acc_heading{
+ background-color: rgba(0,0,0,0.4); 
+}
 
 @media only screen and (max-width: 767px) {
   body {
@@ -85,6 +117,15 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  }
+  h2{
+  font-size:25px;
+  }
+  .container .four.columns{
+    width: 250px !important;
+  }
+  .accordion_blog__header_description{
+    padding-left:15px;
   }
   .header .nav ul li a {
   padding: 10px;
@@ -119,5 +160,18 @@ body {
     top: 8px;
     min-width: 352px;
   }
-
+  .container{
+    min-width: 337px !important;
+  }
+  .work-thumbnail{
+    width:125px;
+  }
+  .client__logo__padding{
+    padding-left:10px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .client__logo__padding{
+    padding-left:25px;
+  }
 }
