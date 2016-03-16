@@ -56,7 +56,7 @@
   <script src="js/ios6-timers.js"></script>
   <!--<![endif]-->
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
-  <script type="text/javascript" src="js/custom.min.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
   <script type="text/javascript" src="js/jquery.vegas.min.js" ></script>
   <script type="text/javascript" src="js/jquery.fancybox-1.3.4.min.js"></script>
   <script type="text/javascript" src="js/jquery.isotope.min.js" ></script>
@@ -71,6 +71,7 @@
   <script type="text/javascript" src="js/jquery.slider.min.js"></script>
   <script type="text/javascript" src="js/portfolio.detail.min.js"></script>
   <script type="text/javascript" src="js/main-fm.js"></script>
+  <script type="text/javascript" src="js/modified.js"></script>
   <script>
     /* Site Main plug-in initilize */
     $(document).ready(function(){
@@ -226,7 +227,7 @@
   Note: Don't edit below code, except comment area
   -->
   <div class="header" >
-    <div class="headerHold" >
+    <div class="headerHold headerHold--logo" >
       <div class="container fullWidthHeader" >
         <!-- Place your logo here. data-src-small use to add logo for mobile device -->
         <div class="logo" >
@@ -241,7 +242,7 @@
             <!--  Add require site page navigation -->
             <li><a href="#!truth">truth</a></li>
             <li><a href="#!creative-work">creative work</a> </li>
-            <li><a href="#!services">clients</a> </li>
+            <li><a href="#!clients">clients</a> </li>
             <li><a href="#!portfolio"><img src="images/contactus-link.png"></a></li>
           </ul>
         </div>
@@ -320,360 +321,20 @@
   <!-- Fullscreen Banner page
   	The data-background and data-background-small on each slide is used to add the background image of that slide
   -->
-<div class="page  darkStyle" data-id="!truth" data-background="images/background/image1.jpg" data-background-small="images/background/image1_s.jpg" >
-
-  <div class=" slider1 fmSlider fullHeight" >
-
-    <div class="fmSlides container homeBanner" >
-
-            <!--Note : On each slide, if you add the class fmSlider_animate, than each div inside the slide will make animate.
-            The circular object, portfolio images action are written in custom.js file near // Home page slider items, comment line
-          -->
-
-          <!-- slide 1 -->
-
-          <div class="columns alpha  fmSlider_animate"  >
-            <div>
-
-              <div class="four columns">
-
-                <div class="fmSliderNode flipPanel ">
-                  <a class="single_image" title='<h3>Add nice image description</h3>'  href="images/portfolio/image1.jpg" target="_self">
-                    <div class="front" >
-                      <div class="projThumb_half">
-                        <img src="images/home_banner/image1.jpg" alt="image text" />
-                      </div>
-                    </div>
-
-                    <div class="back miniDesc">
-                      <div> <h5> <b>Click to view Large image</b> </h5> <h6>Add mini description.<br> it's a description text</h6> </div>
-                    </div>
-                  </a>
-                </div>
-
-                <div class="fmSliderNode " >
-                  <div class="projThumb_half flexSlideshow noMargin lightStyle " >
-                    <ul class="slides fixedHeight" >
-                      <li><a  class="lazyload" href="images/home_banner/image2.jpg" title="Some text">image</a></li>
-                      <li><a  class="lazyload" href="images/home_banner/image5.jpg" title="Some text">image</a></li>
-                      <li><a  class="lazyload" href="images/home_banner/image1.jpg" title="Some text">image</a></li>
-                      <li><a  class="lazyload" href="images/home_banner/image4.jpg" title="Some text">image</a></li>
-                    </ul>
-                  </div>
-                </div>
-
-              </div>
-
-
-              <div class="four columns" >
-                <div class="fmSliderNode flipPanel">
-                  <a class="single_image" title='<h3>Small description about image</h3>'  href="images/portfolio/image3.jpg" target="_self">
-                    <div class="front" >
-                      <div class="projThumb_middle" >
-                        <img src="images/home_banner/image3.jpg" alt="image text" />
-                      </div>
-                    </div>
-
-                    <div class="back miniDesc">
-                      <div> <h5> <b>Click to view Large image</b> </h5> <h6>Add mini description.<br> it's a description text</h6> </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-
-
-              <div class="four columns">
-
-                <div class="fmSliderNode">
-                  <a class="projThumb_half scale_over single_image" title='<h5>nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit</h5>'  href="images/portfolio/image2.jpg" target="_self">
-                    <img src="images/home_banner/image4.jpg" alt="image text" />
-                    <div class="overlay zoom"></div>
-                  </a>
-                </div>
-
-                <div class="fmSliderNode shadow_hover">
-                  <a href="#!portfolio">
-                    <div class="projThumb_half" >
-                     <div class="miniDesc">
-                      <div> <h2 class="highlight_color">Portfolio</h2> <h4>Link to portfolio page</h4> </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-
+    <div class="page" data-id="!truth">
+      <div class="container darkBackground truth-box">
+        <div class="row">
+            <div class="twelve columns truth-content">
+              <h2>Living The Dream</h2>
+              <p> Elder Tree is a place for the creative idealist, progressive artist and everyday adventure seeker. Our aim is to diversify within a unique space, providingg a center of convergence for both our Emmy Award-winning team and our clients alike, a hub within the commuity to engage and encourage interactivity, a place where art evolves naturally from our sense of play.</p></br>
+              <p>Elder Tree is an extension of you, a creative conduit for the best in design, ad messaging, brand building, device syndication, commercial tool kits, video production, post, print and graphics</br> packages plus compelling cross-promotional campaigns. Our success depends on building trust, forging a bond, listening and maintaining an open dialogue with our clients to achieve their vision and always exceed expecations. </p>
             </div>
-
-
-            <div class="four columns" >
-              <div class="fmSliderNode">
-                <a class="projThumb_middle scale_over single_image" title='<h2>We love to create beautiful website</h2>'  href="images/portfolio/image1.jpg" target="_self">
-                  <img src="images/home_banner/image6.jpg" alt="image text" />
-                  <div class="overlay zoom"></div>
-                </a>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-
-
-        <!-- slide 2 -->
-
-        <div class="columns alpha  fmSlider_animate" >
-          <div>
-
-            <div class="four columns">
-
-              <div class="fmSliderNode shadow_hover">
-                <a href="#!aboutus">
-                  <div class="projThumb_half" >
-                   <div class="miniDesc">
-                    <div> <h2 class="highlight_color">About Us</h2> <h4>Link to Aboutus page</h4> </div>
-                  </div>
-                </div>
-              </a>
-            </div>
-
-            <div class="fmSliderNode flipPanel" >
-              <a class="single_image" title='<h3>Add nice image description</h3>'  href="images/portfolio/image4.jpg" target="_self">
-                <div class="front" >
-                  <div class="projThumb_half" >
-                    <img src="images/home_banner/image4.jpg" alt="image text" />
-                  </div>
-                </div>
-
-                <div class="back miniDesc">
-                  <div> <h5> <b>Click to view Large image</b> </h5> <h6>Add mini description.<br> it's a description text</h6> </div>
-                </div>
-              </a>
-            </div>
-
-          </div>
-
-
-
-          <div class="four columns">
-
-
-            <div class="fmSliderNode " >
-              <div class="projThumb_half flexSlideshow lightStyle noMargin" >
-                <ul class="slides fixedHeight" >
-                  <li><a  class="lazyload" href="images/home_banner/image4.jpg" title="Some text">image</a></li>
-                  <li><a  class="lazyload" href="images/home_banner/image2.jpg" title="Some text">image</a></li>
-                  <li><a  class="lazyload" href="images/home_banner/image5.jpg" title="Some text">image</a></li>
-                  <li><a  class="lazyload" href="images/home_banner/image1.jpg" title="Some text">image</a></li>
-                </ul>
-              </div>
-            </div>
-
-
-            <div class="fmSliderNode flipPanel">
-              <a class="single_image" title='<h3>Add nice image description</h3>'  href="images/portfolio/image6.jpg" target="_self">
-                <div class="front" >
-                  <div class="projThumb_half ">
-                    <img src="images/home_banner/image5.jpg" alt="image text" />
-                  </div>
-                </div>
-
-                <div class="back miniDesc">
-                  <div> <h5> <b>Click to view Large image</b> </h5> <h6>Add mini description.<br> it's a description text</h6> </div>
-                </div>
-              </a>
-            </div>
-
-          </div>
-
-
-
-          <div class="four columns">
-
-           <div class="fmSliderNode shadow_hover" >
-            <a href="#!portfolio">
-              <div class="projThumb_half" >
-               <div class="miniDesc">
-                <div> <h2 class="highlight_color">Contact Us</h2> <h4>Touch with us</h4> </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-
-
-        <div class="fmSliderNode">
-          <a class="projThumb_half scale_over single_image" title='<h6>Dolore magna aliquam erat volutpat adipiscing elit</h6>'  href="images/portfolio/image3.jpg" target="_self">
-            <img src="images/home_banner/image1.jpg" alt="image text" />
-            <div class="overlay zoom"></div>
-          </a>
-        </div>
-
+        </div>  
       </div>
-
-
-
-
-
-      <div class="four columns">
-
-        <div class="fmSliderNode flipPanel" >
-          <a class="single_image" title='<h3>Add nice image description</h3>'  href="images/portfolio/image7.jpg" target="_self">
-            <div class="front" >
-              <div class="projThumb_half" >
-                <img src="images/home_banner/image2.jpg" alt="image text" />
-              </div>
-            </div>
-
-            <div class="back miniDesc">
-              <div> <h5> <b>Click to view Large image</b> </h5> <h6>Add mini description.<br> it's a description text</h6> </div>
-            </div>
-          </a>
-        </div>
-
-
-        <div class="fmSliderNode flipPanel">
-          <a class="single_image" title='<h3>Add nice image description</h3>'  href="images/portfolio/image8.jpg" target="_self">
-            <div class="front" >
-              <div class="projThumb_half ">
-                <img src="images/home_banner/image4.jpg" alt="image text" />
-              </div>
-            </div>
-
-            <div class="back miniDesc">
-              <div> <h5> <b>Click to view Large image</b> </h5> <h6>Add mini description.<br> it's a description text</h6> </div>
-            </div>
-          </a>
-        </div>
-
-      </div>
-
 
     </div>
-  </div>
-
-
-
-  <!-- slide 3 -->
-
-  <div class="columns alpha  fmSlider_animate"  >
-    <div>
-
-      <div class="four columns">
-        <div class="fmSliderNode flipPanel ">
-          <a class="single_image" title='<h3>Add nice image description</h3>'  href="images/portfolio/image9.jpg" target="_self">
-            <div class="front" >
-              <div class="projThumb_half ">
-                <img src="images/home_banner/image1.jpg" alt="image text" />
-              </div>
-            </div>
-
-            <div class="back miniDesc">
-              <div> <h5> <b>Click to view Large image</b> </h5> <h6>Add mini description.<br> it's a description text</h6> </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="four columns">
-        <div class="fmSliderNode flipPanel" >
-          <a class="single_image" title='<h3>Add nice image description</h3>'  href="images/portfolio/image10.jpg" target="_self">
-            <div class="front" >
-              <div class="projThumb_half" >
-                <img src="images/home_banner/image4.jpg" alt="image text" />
-              </div>
-            </div>
-
-            <div class="back miniDesc">
-              <div> <h5> <b>Click to view Large image</b> </h5> <h6>Add mini description.<br> it's a description text</h6> </div>
-            </div>
-          </a>
-        </div>
-
-        <div class="fmSliderNode flipPanel" >
-          <a class="single_image" title='<h3>Add nice image description</h3>'  href="images/portfolio/image1.jpg" target="_self">
-            <div class="front" >
-              <div class="projThumb_half" >
-                <img src="images/home_banner/image2.jpg" alt="image text" />
-              </div>
-            </div>
-
-            <div class="back miniDesc">
-              <div> <h5> <b>Click to view Large image</b> </h5> <h6>Add mini description.<br> it's a description text</h6> </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-
-      <div class="four columns" >
-        <div class="fmSliderNode flipPanel">
-          <a class="single_image" title='<h3>Add nice image description</h3>'  href="images/portfolio/image2.jpg" target="_self">
-            <div class="front" >
-              <div class="projThumb_middle" >
-                <img src="images/home_banner/image3.jpg" alt="image text" />
-              </div>
-            </div>
-
-            <div class="back miniDesc">
-              <div> <h5> <b>Click to view Large image</b> </h5> <h6>Add mini description.<br> it's a description text</h6> </div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-
-
-      <div class="four columns">
-
-        <div class="fmSliderNode " >
-          <div class="projThumb_half noBg" ></div>
-        </div>
-
-        <div class="fmSliderNode flipPanel">
-          <a class="single_image" title='<h3>Add nice image description</h3>'  href="images/portfolio/image3.jpg" target="_self">
-            <div class="front" >
-              <div class="projThumb_half ">
-                <img src="images/home_banner/image5.jpg" alt="image text" />
-              </div>
-            </div>
-
-            <div class="back miniDesc">
-              <div> <h5> <b>Click to view Large image</b> </h5> <h6>Add mini description.<br> it's a description text</h6> </div>
-            </div>
-          </a>
-        </div>
-
-      </div>
-
-
-    </div>
-  </div>
-
-
-
-
-  <!-- End slides -->
-
-</div>
-
-</div>
-
-
-
-</div>
 
 <!-- End Fullscreen Banner page -->
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -687,35 +348,37 @@
 <!-- About Us Page-->
 
 
-<div class="page darkStyle " data-id="!creative-work" data-position="top"  data-background="images/background/image1.jpg" data-background-small="images/background/image1_s.jpg" >
+<div class="page darkStyle " data-id="!creative-work" data-position="top" >
 <div class="container darkStyle ">
 
-    <div class="page_top_spacing"></div>
+  
    <hr>
 
    <div class="row">
-     <dl class="accordion_blog" data-autohide="true" data-openfirstelement="true">
+     <dl class="accordion_blog" data-autohide="true" data-openfirstelement="false">
 
       <!-- Accordion tab -->
       <dt>
         <a href="" class="normal"><span class="closeOpen" style="background-position: 0px -28px;"></span>
           <div class="acc_heading">
-            <div class="blog_date dark_color">
-              <span class="b_date">30</span>
-              <span class="b_month">May</span>
-              <span class="b_year">2013</span>
-            </div>
             <!-- Heading -->
-            <span class="b_heading">Pasadena City College </span>
+            <span class="b_heading"><img class="work-thumbnail" src="images/work/pcc_thumbnail.jpg"/>
+              <span class="accordion_blog__header_description">
+                <div>
+                  <h3>Spot</h3>
+                  <h2>PCC Complete </h2>
+                </div>
+              </span>
+            </span>
           </div>
         </a>
       </dt>
 
-      <dd class="active" style="display: block;">
+      <dd class="active">
         <div class="acc_content">
           <!-- Tab content -->
           <div class="sixteen columns">
-            <h1>GreenPaw – Keep Track of Your Marketplace Items</h1>
+            <h1>Client: PCC Complete</h1>
           </div>
 
           <div class="eleven columns">
@@ -725,37 +388,10 @@
 
           <div class="five columns">
             <!-- Blog post Author and data -->
-            <a class="list_hover"><span class="list7_white"> Aline marke</span></a>  <br>
-            <a class="list_hover"><span class="list8_white"> 6 comments</span></a>  <br>
-            <a class="list_hover"><span class="list10_white"> 50</span></a>
-
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
             <div class="separator_mini"></div>
             <!-- Social network link -->
-            <span class="share"><span>share</span></span>
-            <ul class="social_bookmarks noMargin">
-              <li class="twitter_white noMargin"><a>Follow us on Twitter</a></li>
-              <li class="facebook_white noMargin"><a>Join our Facebook Group</a></li>
-              <li class="gplus_white noMargin"><a>Join me on Google Plus</a></li>
-              <li class="linkedin_white noMargin"><a>Add me on Linkedin</a></li>
-              <li class="rss_white noMargin"><a>RSS</a></li>
-            </ul>
-            <div class="separator_mini"></div>
           </div>
-
-          <div class="sixteen columns">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio, Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
-            <blockquote>
-              <p>GreenPaw is an all-in-one package app, designed for authors, by an author. It will display new sales, comments, and changes in rating, and will show you interesting stats, including stats about the whole Marketplace!</p>
-              <cite>Adrian Try - envato</cite>
-            </blockquote>
-
-            <p> Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi nam liber.</p>
-
-            <a href="blog.html" target="_self"><span class="alignLeft button">Continue reading</span></a>
-            <hr>
-          </div>
-
-        </div>
       </dd>
 
 
@@ -763,13 +399,15 @@
       <dt>
         <a href="" class="normal"><span class="closeOpen" style="background-position: 0px 0px;"></span>
           <div class="acc_heading">
-            <div class="blog_date dark_color">
-              <span class="b_date">27</span>
-              <span class="b_month">May</span>
-              <span class="b_year">2013</span>
-            </div>
             <!-- Heading -->
-            <span class="b_heading">Happy Tenth Anniversary, WordPress!</span>
+            <span class="b_heading"><img class="work-thumbnail" src="images/work/pcc_thumbnail.jpg"/>
+              <span class="accordion_blog__header_description">
+                <div>
+                  <h3>Spot</h3>
+                  <h2>PCC Complete </h2>
+                </div>
+              </span>
+            </span>
           </div>
         </a>
       </dt>
@@ -778,60 +416,34 @@
         <div class="acc_content">
           <!-- Tab content -->
           <div class="sixteen columns">
-            <h1>Happy Tenth Anniversary, WordPress!</h1>
+            <h1>Client: PCC Complete</h1>
           </div>
 
           <div class="eleven columns">
-            <img class="scale-with-grid" src="images/slideshow/image1.jpg" style="display: block;">
+            <img class="scale-with-grid" src="images/slideshow/image3.jpg" style="display: block;">
             <div class="separator_mini"></div>
           </div>
 
           <div class="five columns">
             <!-- Blog post Author and data -->
-            <a class="list_hover"><span class="list7_white"> Collis Ta'eed</span></a>  <br>
-            <a class="list_hover"><span class="list8_white"> 6 comments</span></a>  <br>
-            <a class="list_hover"><span class="list10_white"> 50</span></a>
-
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
             <div class="separator_mini"></div>
             <!-- Social network link -->
-            <span class="share"><span>share</span></span>
-            <ul class="social_bookmarks noMargin">
-              <li class="twitter_white noMargin"><a>Follow us on Twitter</a></li>
-              <li class="facebook_white noMargin"><a>Join our Facebook Group</a></li>
-              <li class="gplus_white noMargin"><a>Join me on Google Plus</a></li>
-              <li class="linkedin_white noMargin"><a>Add me on Linkedin</a></li>
-              <li class="rss_white noMargin"><a>RSS</a></li>
-            </ul>
-            <div class="separator_mini"></div>
           </div>
-
-          <div class="sixteen columns">
-            <p>Today, WordPress celebrates its tenth anniversary and we wanted to take a moment to congratulate them. Ten years is a hefty amount of time by any standard—to put it in web terms, WordPress is older than Facebook, YouTube, Tumblr, Pinterest, and of course Envato.</p>
-            <blockquote>
-              <p>It was Christmas day of 2006 when I set up my very first WordPress install. I had a slightly early New Year's resolution to try out blogging, and I can remember excitedly realising just how easy it was to get started</p>
-              <cite>Collis Ta'eed - Envato Founder &amp; CEO</cite>
-            </blockquote>
-
-            <a href="blog.html" target="_self"><span class="alignLeft button">Continue reading</span></a>
-            <hr>
-          </div>
-
-        </div>
       </dd>
-
-
-
       <!-- Accordion tab -->
       <dt>
         <a href="" class="normal"><span class="closeOpen" style="background-position: 0px 0px;"></span>
           <div class="acc_heading">
-            <div class="blog_date dark_color">
-              <span class="b_date">24</span>
-              <span class="b_month">May</span>
-              <span class="b_year">2013</span>
-            </div>
             <!-- Heading -->
-            <span class="b_heading">Envato's Most Wanted Winners – Lightroom </span>
+            <span class="b_heading"><img class="work-thumbnail" src="images/work/pcc_thumbnail.jpg"/>
+              <span class="accordion_blog__header_description">
+                <div>
+                  <h3>Spot</h3>
+                  <h2>PCC Complete </h2>
+                </div>
+              </span>
+            </span>
           </div>
         </a>
       </dt>
@@ -840,57 +452,34 @@
         <div class="acc_content">
           <!-- Tab content -->
           <div class="sixteen columns">
-            <h1>Envato's Most Wanted Winners – Lightroom </h1>
+            <h1>Client: PCC Complete</h1>
           </div>
 
           <div class="eleven columns">
-            <img class="scale-with-grid" src="images/slideshow/image2.jpg" style="display: block;">
+            <img class="scale-with-grid" src="images/slideshow/image3.jpg" style="display: block;">
             <div class="separator_mini"></div>
           </div>
 
           <div class="five columns">
             <!-- Blog post Author and data -->
-            <a class="list_hover"><span class="list7_white"> Collis Ta'eed</span></a>  <br>
-            <a class="list_hover"><span class="list8_white"> 6 comments</span></a>  <br>
-            <a class="list_hover"><span class="list10_white"> 50</span></a>
-
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
             <div class="separator_mini"></div>
             <!-- Social network link -->
-            <span class="share"><span>share</span></span>
-            <ul class="social_bookmarks noMargin">
-              <li class="twitter_white noMargin"><a>Follow us on Twitter</a></li>
-              <li class="facebook_white noMargin"><a>Join our Facebook Group</a></li>
-              <li class="gplus_white noMargin"><a>Join me on Google Plus</a></li>
-              <li class="linkedin_white noMargin"><a>Add me on Linkedin</a></li>
-              <li class="rss_white noMargin"><a>RSS</a></li>
-            </ul>
-            <div class="separator_mini"></div>
           </div>
-
-          <div class="sixteen columns">
-            <p>Many congratulations to the following authors who took part in our Envato's Most Wanted event where we invited authors to submit Lightroom &amp; Aperture Plugins to GraphicRiver:</p>
-
-            <p>All authors will be receiving cash (PayPal/Skrill) payments within the next couple of weeks and will also receive an Envato's Most Wanted badge!  Meanwhile, you can see all the entries to the contest within our Lightroom Presets &amp; Aperture Presets categories.</p>
-
-            <a href="blog.html" target="_self"><span class="alignLeft button">Continue reading</span></a>
-            <hr>
-          </div>
-
-        </div>
       </dd>
-
-
       <!-- Accordion tab -->
       <dt>
         <a href="" class="normal"><span class="closeOpen" style="background-position: 0px 0px;"></span>
           <div class="acc_heading">
-            <div class="blog_date dark_color">
-              <span class="b_date">05</span>
-              <span class="b_month">Apr</span>
-              <span class="b_year">2013</span>
-            </div>
             <!-- Heading -->
-            <span class="b_heading">Now Hiring – Growth Team</span>
+            <span class="b_heading"><img class="work-thumbnail" src="images/work/pcc_thumbnail.jpg"/>
+              <span class="accordion_blog__header_description">
+                <div>
+                  <h3>Spot</h3>
+                  <h2>PCC Complete </h2>
+                </div>
+              </span>
+            </span>
           </div>
         </a>
       </dt>
@@ -899,49 +488,28 @@
         <div class="acc_content">
           <!-- Tab content -->
           <div class="sixteen columns">
-            <h1>About the Position</h1>
+            <h1>Client: PCC Complete</h1>
           </div>
 
           <div class="eleven columns">
-            <img class="scale-with-grid" src="images/slideshow/image4.jpg" style="display: block;">
+            <img class="scale-with-grid" src="images/slideshow/image3.jpg" style="display: block;">
             <div class="separator_mini"></div>
           </div>
 
           <div class="five columns">
             <!-- Blog post Author and data -->
-            <a class="list_hover"><span class="list7_white"> Collis Ta'eed</span></a>  <br>
-            <a class="list_hover"><span class="list8_white"> 6 comments</span></a>  <br>
-            <a class="list_hover"><span class="list10_white"> 50</span></a>
-
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
             <div class="separator_mini"></div>
             <!-- Social network link -->
-            <span class="share"><span>share</span></span>
-            <ul class="social_bookmarks noMargin">
-              <li class="twitter_white noMargin"><a>Follow us on Twitter</a></li>
-              <li class="facebook_white noMargin"><a>Join our Facebook Group</a></li>
-              <li class="gplus_white noMargin"><a>Join me on Google Plus</a></li>
-              <li class="linkedin_white noMargin"><a>Add me on Linkedin</a></li>
-              <li class="rss_white noMargin"><a>RSS</a></li>
-            </ul>
-            <div class="separator_mini"></div>
           </div>
-
-          <div class="sixteen columns">
-            <p>At Envato our mission is to help people to earn and to learn, online. We're a young online company, internationally known in our market. Our marketplaces have millions of members who buy and sell digital goods and a network of educational blogs where millions learn creative skills.</p>
-            <hr>
-            <span class="list3"> Passion for the Envato community, buyers, authors, and staff alike</span>
-            <span class="list3">Solid commercial instincts that will help you make fast, accurate decisions</span>
-            <span class="list3">Experience consulting and communicating with diverse groups of people across a business</span>
-            <span class="list3">Experience using web analytics insights and SEO knowledge to drive new items forward</span>
-            <hr>
-            <h4>Congratulations once again and keep an eye out for future Envato's Most Wanted events across all our Marketplaces! </h4>
-            <hr>
-            <a href="blog.html" target="_self"><span class="alignLeft button">Continue reading</span></a>
-            <hr>
-          </div>
-
-        </div>
       </dd>
+
+
+
+      <!-- Accordion tab -->
+      
+
+      <!-- Accordion tab -->
 
     </dl>
   </div>
@@ -954,322 +522,55 @@
 <!-- End About us Page -->
 
 
+<!-- Clients Page -->
 
+<div class="page darkStyle" data-id="!clients" data-position="top">
+  <div class="page_top_spacing"></div>
+  <div class="page_top_spacing"></div>
+  <div class="page_top_spacing"></div>
+	
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- Services Page -->
-
-<div class="page darkStyle" data-id="!services" data-position="top" data-background="images/background/image3.jpg" data-background-small="images/background/image3_s.jpg" >
-
-	<div class="container" >
-
-		<div class="page_top_spacing"></div>
-
-    <div class="sixteen columns">
-      <h1>Creating ideas and building brands <br>that <span class="highlight_color">truly</span> matter to people</h1>
+  <div class="container darkBackground truth-box">
+    <div class="row">
+      <div class="page_top_spacing"></div>
+      <h2 class="client__logo__padding">Our Favorite Fans</h2>
     </div>
-
-    <span class="separator_shadow"></span>
-
-    <div class="row" >
-     <div class="eleven columns fixedHeight lightStyle" >
-      <div class="imgBorder">
-        <a  class="lazyload scale-with-grid" href="images/service_img4.jpg" title="Some text">image</a>
-      </div>
-      <div class="separator_mini"></div>
+    <div class="row">
+      <div class="four column client__logo__padding"><img src="images/client/fox.png"/></div>
+      <div class="four column client__logo__padding"><img src="images/client/nfl.png"/></div>
+      <div class="four column client__logo__padding"><img src="images/client/soccer.png"/></div>
+      <div class="four column client__logo__padding"><img src="images/client/foxsports1.png"/></div>
     </div>
-
-    <div class="five columns" >
-     <div class="pad">
-       <h1 class="highlight_color"> Our services </h1>
-       <h3> - Web design</h3>
-       <h3> - Content Management</h3>
-       <h3> - Email Marketing</h3>
-       <h3> - Branding & Identity</h3>
-       <h3> - Illustrator Design</h3>
-       <h3> - Brochure design</h3>
-       <h3> - Print & Media</h3>
-     </div>
-   </div>
- </div>
-
-
- <span class="separator_shadow"></span>
-
- <div class="row text_center">
-  <h1 class="large_font"><span class="light_color">Creating strong provocative</span>, <br><span class="highlight_color">relationships</span> between <span class="highlight_color">good</span> companies <br>and their <span class="highlight_color">customers</span></h1>
-
-</div>
-
-<div class="separator_mini"></div>
-
-<div class="row">
-  <div class="one-third column">
-   <div class="hover_moveTop">
-    <img class="scale-with-grid" src="images/service_img1.png" alt="image text" />
-    <div class="separator_mini"></div>
-    <h3>Find out good platform</h3>
-    <p> consectetuer adipiscing elit, sed diam nonummy nibh <a>euismod tincidunt</a>. sed diam nonummy nibh euismod tlaoreet.</p>
-    <p>Tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam dolore magna aliquam </p>
+    <div class="row">
+      <div class="four column client__logo__padding"><img src="images/client/yes.png"/></div>
+      <div class="four column client__logo__padding" ><img src="images/client/speed.png"/></div>
+      <div class="four column client__logo__padding" ><img src="images/client/kawasaki.png"/></div>
+      <div class="four column client__logo__padding" ><img src="images/client/mlb.png"/></div>
+    </div>
+    <div class="row">
+      <div class="four column client__logo__padding" ><img src="images/client/hulu.png"/></div>
+      <div class="four column client__logo__padding" ><img src="images/client/wsj.png"/></div>
+      <div class="four column client__logo__padding"><img src="images/client/nbcsports.png"/></div>
+      <div class="four column client__logo__padding" ><img src="images/client/amc.png"/></div>
+    </div>
+    <div class="row">
+      <div class="four column client__logo__padding" ><img src="images/client/foxsports.png"/></div>
+      <div class="four column client__logo__padding" ><img src="images/client/tacobell.png"/></div>
+      <div class="four column client__logo__padding" ><img src="images/client/fueltv.png"/></div>
+      <div class="four column client__logo__padding"><img src=""/></div>
+    </div>
+    <div class="row">
+      <div class="four column client__logo__padding" ><img src=""/></div>
+      <div class="four column client__logo__padding" ><img src=""/></div>
+      <div class="four column client__logo__padding" ><img src=""/></div>
+      <div class="four column client__logo__padding"><img src=""/></div>
+    </div>
+    <div class="page_bottom_spacing"></div>
   </div>
-  <hr>
-</div>
-
-<div class="one-third column">
- <div class="hover_moveTop">
-  <img class="scale-with-grid" src="images/service_img2.png" alt="image text" />
-  <div class="separator_mini"></div>
-  <h3>Do Latest Trend</h3>
-  <p>Aconsectetuer adipiscing elit, sed diam nonummy nibh <a>euismod tincidunt</a>. sed diam nonummy nibh euismod tlaoreet.</p>
-  <p>Tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam dolore magna aliquam </p>
-</div>
-<hr>
-</div>
-
-<div class="one-third column">
- <div class="hover_moveTop">
-  <img class="scale-with-grid" src="images/service_img3.png" alt="image text" />
-  <div class="separator_mini"></div>
-  <h3>Attract Global Audience</h3>
-  <p>Fconsectetuer adipiscing elit, sed diam nonummy nibh <a>euismod tincidunt</a>. sed diam nonummy nibh euismod tlaoreet.</p>
-  <p>Tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam dolore magna aliquam </p>
-</div>
-<hr>
-</div>
-</div>
-
-<div class="separator_mini"></div>
-
-<div class="sixteen columns" >
-  <h1>Check out one minute video</h1>
-  <div class="separator"></div>
-  <!-- Add video -->
-  <div class="addVideo video_content"  data-url="http://vimeo.com/67597507" >
-    <div class="video_title fs_caption caption_style3 darkBgCaption" >
-     <div> <h4 class="light_color"><span>Support Youtube and vimeo video</span></h4></div>
-     <div> <h6 class="light_color"><span>Add / Remove video title</span></h6></div>
-   </div>
-   <div class="video_hover"></div>
-   <img class="scale-with-grid" src="images/video_img1.jpg" data-retina="yes" alt="video text"/>
- </div>
- <div class="video-shadow"><img  src="images/video-shadow.png" data-retina="yes" alt="video shadow" /></div>
- <hr>
- <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
- <p>Adipiscing laoreet dolore magna aliquam erat volutpat. quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-</div>
-
-
-<span class="separator_shadow"></span>
-
-<div class="sixteen columns" >
-  <h1 >Check out our recent projects - Slideshow</h1>
-  <hr>
-  <div class="flexSlideshow lightStyle" >
-    <ul class="slides large_image">
-      <li>
-        <a  class="lazyload scale-with-grid" href="images/slideshow/image3.jpg" data-src-small="images/slideshow/image3_s.jpg" title="Some text">image</a>
-        <p class="flex-caption">Nice Image Caption.</p>
-      </li>
-      <li>
-        <a  class="lazyload scale-with-grid" href="images/slideshow/image2.jpg" data-src-small="images/slideshow/image2_s.jpg" title="Some text">image</a>
-        <p class="flex-caption">laoreet dolore magna aliquam erat.</p>
-      </li>
-      <li>
-        <a  class="lazyload scale-with-grid" href="images/slideshow/image1.jpg" data-src-small="images/slideshow/image1_s.jpg" title="Some text">image</a>
-      </li>
-      <li>
-        <a  class="lazyload scale-with-grid" href="images/slideshow/image4.jpg" data-src-small="images/slideshow/image4_s.jpg" title="Some text">image</a>
-      </li>
-    </ul>
-  </div>
-  <hr>
-</div>
-
-<div class="sixteen columns" >
-  <span class="mini_description">
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
-  </span>
-  <hr>
-</div>
-
-<div class="row">
-
- <div class="ten columns ">
-  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, <a>sed diam nonummy</a> nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.</p>
-
-  <p>Adipiscing laoreet dolore magna aliquam erat volutpat. quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo.</p>
-  <span class="share"><span>share</span></span>
-  <ul class="social_bookmarks noMargin">
-    <li class="twitter_white noMargin"><a >Follow us on Twitter</a></li>
-    <li class="facebook_white noMargin"><a >Join our Facebook Group</a></li>
-    <li class="gplus_white noMargin"><a >Join me on Google Plus</a></li>
-    <li class="linkedin_white noMargin"><a >Add me on Linkedin</a></li>
-    <li class="rss_white noMargin"><a >RSS</a></li>
-  </ul>
-
-  <hr>
-
-  <span class="share"><span>Tags</span></span>
-  <ul class="tag">
-    <li>video</li>
-    <li>film</li>
-    <li>movie</li>
-    <li>vimeo</li>
-  </ul>
-
-  <span class="separator_mini"></span>
 
 </div>
 
-<div class="six columns">
- <dl class="accordion" data-autoHide="true" data-openFirstElement="true" >
-
-  <!-- Accordion tab -->
-  <dt>
-    <a href="" class="normal"><div class="acc_heading">
-      <!-- Heading -->
-      Heading Text panel 1
-    </div></a>
-  </dt>
-
-  <dd>
-    <span class="acc_content">
-      <!-- Tab content -->
-      Lorem ipsum dolor sit a m et, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.<br>
-      set <em><span class="text_highlight">data-autoHide="true"</span></em> and <br> <em><span class="text_highlight">data-openFirstElement="true"</span></em> to the main accordion class div.
-      Add any number of accordion on same page.
-    </span>
-  </dd>
-
-
-  <!-- Accordion tab -->
-  <dt>
-    <a href="" class="normal"><div class="acc_heading">
-      <!-- Heading -->
-      Heading Text panel 2
-    </div></a>
-  </dt>
-  <dd>
-    <span class="acc_content">
-      <!-- Tab content -->
-      Lorem ipsum dolor sit a m et, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. onec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.
-    </span>
-  </dd>
-
-
-  <!-- Accordion tab -->
-  <dt>
-    <a href="" class="normal"><div class="acc_heading">
-      <!-- Heading -->
-      Lorem ipsum dolor sit amet 3
-    </div></a>
-  </dt>
-  <dd>
-    <span class="acc_content">
-      <!-- Tab content -->
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer commodo tristique odio, Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus
-    </span>
-  </dd>
-
-</dl>
-</div>
-
-</div>
-
-
-<span class="separator_shadow"></span>
-
-
-<!-- Porduct 1 -->
-<div class="seven columns alignRight lightStyle">
- <!-- Slideshow -->
-
- <div class="flexSlideshow" >
-   <div class="imgBorder">
-    <ul class="slides">
-      <li><a  class="lazyload scale-with-grid" href="images/product/image1.jpg" title="Some text">image</a></li>
-      <li><a  class="lazyload scale-with-grid" href="images/product/image2.jpg" title="Some text">image</a></li>
-      <li><a  class="lazyload scale-with-grid" href="images/product/image3.jpg" title="Some text">image</a></li>
-      <li><a  class="lazyload scale-with-grid" href="images/product/image4.jpg" title="Some text">image</a></li>
-    </ul>
-  </div>
-</div>
-<hr>
-</div>
-
-<div class="nine columns">
- <h2 >Show your product with details</h2>
- <p class="mini_description">If consectetuer adipiscing<strong> elit, sed diam nonummy</strong>,tincidunt ut laoreet dolore magna aliquam erat volutpat adipiscing elit diam</p>
-
- <p class="mini_description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. sed diam nonummy nibh euismod tlaoreet dolore magna aliquam erat volutpat.</p>
-
- <hr>
- <a class="button css3button">BUY NOW</a>
- <hr>
-
- <div class="row" >
-  <span class="share"><span>share</span></span>
-  <ul class="social_bookmarks noMargin">
-    <li class="twitter_white noMargin"><a >Follow us on Twitter</a></li>
-    <li class="facebook_white noMargin"><a >Join our Facebook Group</a></li>
-    <li class="gplus_white noMargin"><a >Join me on Google Plus</a></li>
-    <li class="linkedin_white noMargin"><a >Add me on Linkedin</a></li>
-    <li class="rss_white noMargin"><a >RSS</a></li>
-  </ul>
-</div>
-
-<div class="row" >
- <span class="share"><span>Tags</span></span>
- <ul class="tag">
-  <li>windows</li>
-  <li>ios</li>
-  <li>Android</li>
-  <li>mac</li>
-</ul>
-</div>
-</div>
-
-
-<div class="page_bottom_spacing"></div>
-
-</div>
-
-
-</div>
-
-<!-- End Services Page -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- End Clients Page -->
 
 
 <!-- Isotope Portfolio  -->
