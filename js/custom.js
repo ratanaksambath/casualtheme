@@ -796,7 +796,7 @@
 		
 		jQuery(function($){
           $('.accordion_blog > dt > a').prepend('<span class="closeOpen" ></span>');
-			//$('.accordion_blog').attr("data-autoHide");
+			// $('.accordion_blog').attr("data-autoHide");
 				 
 			$('.accordion_blog').each( function(){
 				
@@ -814,8 +814,7 @@
 				
 				$(this).find(' > dt > a').click(function() {
 					$this = $(this);
-					$target =  $this.parent().next();					
-					
+					$target =  $this.parent().next();				
 					$("body").mainFm('intVideoObject', $this);				
 					$("body").find('.tabVideo').each(function(){
 						$(this).find('.vid').remove();
@@ -833,25 +832,32 @@
 						allDt.find(' dt .closeOpen').css({"background-position":"0px 0px"});
 						$this.find(".closeOpen").css({"background-position":"0px -28px"});
 						$target =  $this.parent().next();
+                        if($(this).parent().siblings().hasClass('hidden')){
+                                $('.hidden').show();
+                        } //end if
 						if(!$target.hasClass('active')){
+                            $this.parent().addClass("hidden");
+                            $this.parent().hide();
 							allPanels.removeClass('active').slideUp();
 							$target.addClass('active').slideDown();
-						}else{
-							$this.find(".closeOpen").css({"background-position":"0px 0px"});
-							allPanels.removeClass('active').slideUp();
+
 						}
+
+
 					}else{	
 						
 						if($this.data('show')){
 							$this.data('show',false);
 							$this.find('.closeOpen').css({"background-position":"0px 0px"});
 							$target.removeClass('active').slideUp();
+                            
 						}else{
 							$this.data('show',true);
 							$this.find(".closeOpen").css({"background-position":"0px -28px"});
-							$target.addClass('active').slideDown();							
+							$target.addClass('active').slideDown();				
+
 						}
-						
+	
 					}
 					
 					setTimeout(function(){ $("html").getNiceScroll().resize(); },500);
