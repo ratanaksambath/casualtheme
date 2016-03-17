@@ -621,11 +621,14 @@
 				if(qs === 0){
 					$(this).find("li a").each(function() {
 						$(this).data("act",false);
+						$(this).removeClass("current-tab");
 
 						if(self.cM_.attr("href") === $(this).attr("href")){
 							curMenuSho = $(this);
 							curMenuSho.css("color", self.menuHighlightColor);
 							curMenuSho.data("act",true);
+							curMenuSho.addClass("current-tab");
+
 						}
 					});
 				}
@@ -633,11 +636,13 @@
 				if(qs>0){
 					$(this).find("li a").each(function() {
 						$(this).data("act",false);
+						$(this).removeClass("current-tab");
 
 						if(self.cM_.attr("href") === $(this).attr("href")){
 							curMenuSho = $(this).parent().parent().parent().children(":first-child");
 							curMenuSho.css("color", self.menuHighlightColor);
 							curMenuSho.data("act",true);
+							curMenuSho.addClass("current-tab");
 						}
 					});
 				}
