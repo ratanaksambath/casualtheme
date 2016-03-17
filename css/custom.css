@@ -9,6 +9,13 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+#contact-link a{
+  padding-left: 15px;
+  width: 21px;
+  height: 10px;
+  margin-top: 2px;
+  background: url('../images/contactus-link.png') 10px 10px no-repeat;
+}
 .backgroundColor,
 .vegas-background {
   display: none !important;
