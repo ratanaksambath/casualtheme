@@ -76,8 +76,8 @@ body {
 .acc_heading{
   max-height: 80px;
 }
-.accordion_blog dt .acc_heading h3{
-  margin: 0;
+.accordion_blog__header_description h3{
+  margin: 0 !important;
 }
 dd {
   background-color:#222222;
@@ -92,10 +92,14 @@ dd {
   display:inline-flex;
 }
 .accordion_blog__header_description{
-  padding-left:35px;
+  padding-left:10px;
+  margin-top:-6px;
+}
+h3{
+  font-size:20px !important;
 }
 h2{
-  font-size:32px;
+  font-size:23px;
 }
 img.scale-with-grid{
   height: 380px;
@@ -104,12 +108,35 @@ img.scale-with-grid{
   padding-left:70px;
 }
 .darkStyle .accordion_blog dt .acc_heading {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.7);
 }
 .darkStyle .accordion_blog dt:hover .acc_heading{
- background-color: rgba(0,0,0,0.4); 
+ background-color: rgba(0,0,0,0.9); 
 }
-
+.creative__work__dd{
+ background-color: rgba(0,0,0,0.7); 
+}
+.creative__work{
+  float: left;
+  margin-left: 20px;
+  max-width: 354px;
+}
+.creative__work__dt{
+  padding-bottom: 30px;
+}
+.creative__work__dd{
+  min-width:1080px;
+  margin-bottom:30px;
+}
+.work__content__description{
+  width: 500px !important;
+}
+.work__content__videobox{
+  height: 335px !important;
+}
+.video_content{
+  height:100%;
+}
 @media only screen and (max-width: 767px) {
   body {
   background: url('../images/background/image1_s.jpg') no-repeat 90% 50% fixed;
@@ -117,6 +144,10 @@ img.scale-with-grid{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  }
+  .creative__work__dd{
+    min-width: 200px;
+    max-width:337px;
   }
   h2{
   font-size:25px;
@@ -169,6 +200,10 @@ img.scale-with-grid{
   .client__logo__padding{
     padding-left:10px;
   }
+  .creative__work__dt{
+    padding-bottom: 10px;
+  }
+
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .client__logo__padding{
