@@ -46,7 +46,9 @@
 		ipadDevice = agent.indexOf("ipad") > -1;
 		iPhoneDevice = agent.indexOf("iphone") > -1;
 		iVersion = agent.slice(agent.indexOf("version/")+8,agent.indexOf("version/")+11);
-	
+	    // initialize popup overlay
+        $('#my_popup').popup();
+
 		/* Find touch device */
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		  isTouch = true;	

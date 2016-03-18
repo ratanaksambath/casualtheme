@@ -87,6 +87,7 @@ body {
 .acc_heading{
   max-height: 80px;
 }
+
 .accordion_blog__header_description h3{
   margin: 0 !important;
 }
@@ -96,16 +97,24 @@ dd {
   background: rgba(0, 0, 0, 0.2);
 }
 .work-thumbnail{
-  width: 150px;
-  height: 74px;
+  width: 112px;
+  height: 63px;
+
 }
 .b_heading{
+  padding-top: 6px;
+  padding-left: 6px;
   display:inline-flex;
 }
+
 .accordion_blog__header_description{
   padding-left:10px;
   margin-top:-6px;
 }
+.accordion_blog__header_description__head{
+  padding-top:4px;
+}
+
 h3{
   font-size:20px !important;
 }
@@ -140,7 +149,8 @@ img.scale-with-grid{
   margin-bottom:30px;
 }
 .work__content__description{
-  width: 100%}
+  width: 500px !important;
+}
 .work__content__videobox{
   height: 271px !important;
   width: 483px !important;
@@ -153,6 +163,9 @@ img.scale-with-grid{
   height: 40px;
   float:right;
   background: url('../images/accordion_blog_white_icon.png') no-repeat 0 -23px;
+}
+.accordion_blog dd .acc_content{
+  padding: 25px 0 0 ;
 }
 @media only screen and (max-width: 767px) {
   body {

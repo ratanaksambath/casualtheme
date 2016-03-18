@@ -72,6 +72,7 @@
   <script type="text/javascript" src="js/portfolio.detail.min.js"></script>
   <script type="text/javascript" src="js/main-fm.js"></script>
   <script type="text/javascript" src="js/modified.js"></script>
+  <script type="text/javascript" src="js/jquery-popupoverlay.js"></script>
   <script>
     /* Site Main plug-in initilize */
     $(document).ready(function(){
@@ -241,7 +242,7 @@
           <ul id="navHolder" >
             <!--  Add require site page navigation -->
             <li><a href="#!truth">truth</a></li>
-            <li><a href="#!creative-work">creative work</a> </li>
+            <li><a href="#!creative-work">creative</a> </li>
             <li><a href="#!clients">clients</a> </li>
             <li id="contact-link"><a href="#!contactus"></a></li>
           </ul>
@@ -262,59 +263,6 @@
     </div>
   </div>
 
-  <!-- Footer Content -->
-  <div class="footer  darkStyle " >
-  	<div class="footerHolder container fullWidthFooter" >
-  		<!-- Place your copyright text -->
-  		<div class="four columns"><h6 class="bottomText">Copyright © 2016 ElderTree</h6></div>
-      <div class="five columns replace_musicPlayer" >
-        <h6 class="bottomText"><span class="list2_white"><a class="normal">contact@emailid.com</a></span></h6>
-      </div>
-    </div>
-  </div>
-  <!-- End site main frame -->
-
-  <!--
-  IMPORTANT NOTES:
-  1. About Page
-      On each page class div, you must set the page name(id) using data-id attribute, this data-id is used to link on site menu see the below example.
-
-  	<div class="page" data-id="!home" > Page Content </div>
-
-  	The data-id (!home) is assign in href (#!home) value in site menu tag
-      <a href="#!home">Home</a>
-
-
-  2. Add background image to each page
-
-  	On Each page class div you can see the attribute data-background and data-background-small. The both attribute is used to
-      set the page background for desktop and mobile device
-
-      Example:
-      <div class="page darkStyle darkBackground" data-id="!aboutus" data-background="images/background/image1.jpg" data-background-small="images/background/image1_s.jpg"  >
-
-      If you need to remove the background just set data-background="none"
-
-
-  3. lazyload
-
-  	The lazyload class is used to load the image only when the page is display.
-
-  	For Example:
-  	if you add the img tag <img src="image page" />
-  	it will increasethe site load time, to avoid this problem,
-
-  	Just use the <a> tag with class name lazyload. see the below code
-  	<a  class="lazyload scale-with-grid" href="desktop size image" data-src-small="Mobile size image" title="image text">image</a>
-
-  	It used to load the image only when the page display. Both High and low resolution image will define using href and data-src-small attribute.
-
-
-  4. Page Style
-
-  	darkStyle class is used to add the dark style to that content
-      lightStyle class is used to add the light style to that content
-    -->
 
   <!-- Begin Page content -->
   <div class="container" >
@@ -364,7 +312,7 @@
             <!-- Heading -->
             <span class="b_heading"><img class="work-thumbnail" src="images/work/pcc_thumbnail.jpg"/>
               <span class="accordion_blog__header_description">
-                <div>
+                <div class="accordion_blog__header_description__head">
                   <h3>Spot</h3>
                   <h2>PCC Complete </h2>
                 </div>
@@ -378,8 +326,67 @@
         <a class="miniMize"></a>
         <div class="acc_content">
           <!-- Tab content -->
-       
+          <div class="nine columns work__content__videobox">
+            <a href="" class="my_popup_open">
+              <div class="addVideo video_content" data-url="https://www.youtube.com/watch?v=ZVzL94jZNdU">
+           
+              <div class="video_hover" style="z-index: -1; opacity: 1;"></div>
+                <img class="scale-with-grid" src="images/work/pcc_video_cover.png" data-retina="yes" alt="video text" style="display: none;">
+              </div>
+            </a>
+          </div>
 
+          <div class="six columns work__content__description">
+            <span class="accordion_blog__header_description">
+              <div class="accordion_blog__header_description__head">
+                <h3>Spot</h3>
+                <h2>PCC Complete </h2>
+              </div>
+            </span>
+            <p>Client: PCC Complete</p>
+            <!-- Blog post Author and data -->
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+            <div class="separator_mini"></div>
+            <!-- Social network link -->
+              <!-- Add an optional button to open the popup -->
+    
+            <!-- Add content to the popup -->
+              <div id="my_popup">
+                <iframe src="https://player.vimeo.com/video/159561454" width="1280" height="720" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+                </iframe>
+                  <p>
+                    <a href="https://vimeo.com/159561454">
+                    PCC Complete</a> from <a href="https://vimeo.com/user44235639">
+                    LIDA IO</a> on <a href="https://vimeo.com">Vimeo</a>.
+                    </p>
+                <!-- Add an optional button to close the popup -->
+                <button class="my_popup_close">Close</button>
+
+              </div>
+          </div>
+      </dd>
+
+       <!-- Accordion tab -->
+      <dt class="creative__work__dt">
+        <a href="" class="normal">
+          <div class="acc_heading">
+            <!-- Heading -->
+            <span class="b_heading"><img class="work-thumbnail" src="images/work/pcc_thumbnail.jpg"/>
+              <span class="accordion_blog__header_description">
+                <div class="accordion_blog__header_description__head">
+                  <h3>Spot</h3>
+                  <h2>PCC Complete </h2>
+                </div>
+              </span>
+            </span>
+          </div>
+        </a>
+      </dt>
+
+      <dd class="creative__work__dd">
+        <a class="miniMize"></a>
+        <div class="acc_content">
+          <!-- Tab content -->
           <div class="nine columns work__content__videobox">
             <div class="addVideo video_content" data-url="https://www.youtube.com/watch?v=ZVzL94jZNdU">
               <div class="vid">
@@ -392,28 +399,26 @@
 
           <div class="six columns work__content__description">
             <span class="accordion_blog__header_description">
-              <div>
+              <div class="accordion_blog__header_description__head">
                 <h3>Spot</h3>
                 <h2>PCC Complete </h2>
               </div>
             </span>
             <p>Client: PCC Complete</p>
             <!-- Blog post Author and data -->
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis.</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
             <div class="separator_mini"></div>
             <!-- Social network link -->
           </div>
       </dd>
-
-
-      <!-- Accordion tab -->
+ <!-- Accordion tab -->
       <dt class="creative__work__dt">
         <a href="" class="normal">
           <div class="acc_heading">
             <!-- Heading -->
             <span class="b_heading"><img class="work-thumbnail" src="images/work/pcc_thumbnail.jpg"/>
               <span class="accordion_blog__header_description">
-                <div>
+                <div class="accordion_blog__header_description__head">
                   <h3>Spot</h3>
                   <h2>PCC Complete </h2>
                 </div>
@@ -423,33 +428,42 @@
         </a>
       </dt>
 
-      <dd class="creative__work__dd" >
+      <dd class="creative__work__dd">
+        <a class="miniMize"></a>
         <div class="acc_content">
           <!-- Tab content -->
-          <div class="sixteen columns">
-            <h1>Client: PCC Complete</h1>
+          <div class="nine columns work__content__videobox">
+            <div class="addVideo video_content" data-url="https://www.youtube.com/watch?v=ZVzL94jZNdU">
+              <div class="vid">
+              </div> 
+        
+              <div class="video_hover" style="z-index: -1; opacity: 1;"></div>
+                <img class="scale-with-grid" src="images/work/pcc_video_cover.png" data-retina="yes" alt="video text" style="display: none;">
+              </div>
           </div>
 
-          <div class="eleven columns">
-            <img class="scale-with-grid" src="images/slideshow/image3.jpg" style="display: block;">
-            <div class="separator_mini"></div>
-          </div>
-
-          <div class="five columns">
+          <div class="six columns work__content__description">
+            <span class="accordion_blog__header_description">
+              <div class="accordion_blog__header_description__head">
+                <h3>Spot</h3>
+                <h2>PCC Complete </h2>
+              </div>
+            </span>
+            <p>Client: PCC Complete</p>
             <!-- Blog post Author and data -->
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
             <div class="separator_mini"></div>
             <!-- Social network link -->
           </div>
       </dd>
-      <!-- Accordion tab -->
+ <!-- Accordion tab -->
       <dt class="creative__work__dt">
         <a href="" class="normal">
           <div class="acc_heading">
             <!-- Heading -->
             <span class="b_heading"><img class="work-thumbnail" src="images/work/pcc_thumbnail.jpg"/>
               <span class="accordion_blog__header_description">
-                <div>
+                <div class="accordion_blog__header_description__head">
                   <h3>Spot</h3>
                   <h2>PCC Complete </h2>
                 </div>
@@ -459,68 +473,36 @@
         </a>
       </dt>
 
-      <dd class="creative__work__dd" >
+      <dd class="creative__work__dd">
+        <a class="miniMize"></a>
         <div class="acc_content">
           <!-- Tab content -->
-          <div class="sixteen columns">
-            <h1>Client: PCC Complete</h1>
+          <div class="nine columns work__content__videobox">
+            <div class="addVideo video_content" data-url="https://www.youtube.com/watch?v=ZVzL94jZNdU">
+              <div class="vid">
+              </div> 
+        
+              <div class="video_hover" style="z-index: -1; opacity: 1;"></div>
+                <img class="scale-with-grid" src="images/work/pcc_video_cover.png" data-retina="yes" alt="video text" style="display: none;">
+              </div>
           </div>
 
-          <div class="eleven columns">
-            <img class="scale-with-grid" src="images/slideshow/image3.jpg" style="display: block;">
-            <div class="separator_mini"></div>
-          </div>
-
-          <div class="five columns">
-            <!-- Blog post Author and data -->
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
-            <div class="separator_mini"></div>
-            <!-- Social network link -->
-          </div>
-      </dd>
-      <!-- Accordion tab -->
-      <dt class="creative__work__dt">
-        <a href="" class="normal">
-          <div class="acc_heading">
-            <!-- Heading -->
-            <span class="b_heading"><img class="work-thumbnail" src="images/work/pcc_thumbnail.jpg"/>
-              <span class="accordion_blog__header_description">
-                <div>
-                  <h3>Spot</h3>
-                  <h2>PCC Complete </h2>
-                </div>
-              </span>
+          <div class="six columns work__content__description">
+            <span class="accordion_blog__header_description">
+              <div class="accordion_blog__header_description__head">
+                <h3>Spot</h3>
+                <h2>PCC Complete </h2>
+              </div>
             </span>
-          </div>
-        </a>
-      </dt>
-
-      <dd class="creative__work__dd" >
-        <div class="acc_content">
-          <!-- Tab content -->
-          <div class="sixteen columns">
-            <h1>Client: PCC Complete</h1>
-          </div>
-
-          <div class="eleven columns">
-            <img class="scale-with-grid" src="images/slideshow/image3.jpg" style="display: block;">
-            <div class="separator_mini"></div>
-          </div>
-
-          <div class="five columns">
+            <p>Client: PCC Complete</p>
             <!-- Blog post Author and data -->
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus</p>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
             <div class="separator_mini"></div>
             <!-- Social network link -->
           </div>
       </dd>
 
 
-
-      <!-- Accordion tab -->
-      
-
-      <!-- Accordion tab -->
 
     </dl>
   </div>
