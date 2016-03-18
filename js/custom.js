@@ -792,17 +792,19 @@
 	
 	
 	
-// Accordion
+// Accordion blog
 		
 		jQuery(function($){
-          $('.accordion_blog > dt > a').prepend('<span class="closeOpen" ></span>');
+          $('.accordion_blog > dd > a').prepend('<span class="closeOpen" ></span>');
+          
 			// $('.accordion_blog').attr("data-autoHide");
 				 
 			$('.accordion_blog').each( function(){
 				
 				var allDt = $(this);
 				var allPanels = allDt.find(' > dd').hide();
-				allDt.find(' dt .closeOpen').css({"background-position":"0px 0px"});
+				allDt.find(' dd .closeOpen').css({"background-position":"0px -28px"});
+
 				 
 				if($(this).attr("data-openFirstElement") === "true"){
                   $(this).children(":first-child").find(".closeOpen").css({"background-position":"0px -15px"});
@@ -833,15 +835,19 @@
 						$this.find(".closeOpen").css({"background-position":"0px -28px"});
 						$target =  $this.parent().next();
                         if($(this).parent().siblings().hasClass('hidden')){
-                                $('.hidden').show();
+                            $('.hidden').show();
                         } //end if
 						if(!$target.hasClass('active')){
                             $this.parent().addClass("hidden");
                             $this.parent().hide();
 							allPanels.removeClass('active').slideUp();
 							$target.addClass('active').slideDown();
-
 						}
+                        $target.find('a').click(function(){
+
+                            allPanels.removeClass('active').slideUp();
+                            $('.hidden').show();
+                        });
 
 
 					}else{	

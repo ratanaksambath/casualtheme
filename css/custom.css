@@ -82,7 +82,7 @@ body {
   padding:20px 40px 20px 20px;
 }
 .darkBackground{
-  background: rgba(0,0,0,0.50);
+  background: rgba(0,0,0,0.70);
 }
 .acc_heading{
   max-height: 80px;
@@ -113,7 +113,7 @@ h2{
   font-size:23px;
 }
 img.scale-with-grid{
-  height: 380px;
+  height: 100%;
 }
 .client__logo__padding{
   padding-left:70px;
@@ -140,13 +140,19 @@ img.scale-with-grid{
   margin-bottom:30px;
 }
 .work__content__description{
-  width: 500px !important;
-}
+  width: 100%}
 .work__content__videobox{
-  height: 335px !important;
+  height: 271px !important;
+  width: 483px !important;
 }
 .video_content{
   height:100%;
+}
+.miniMize{
+  width: 50px;
+  height: 40px;
+  float:right;
+  background: url('../images/accordion_blog_white_icon.png') no-repeat 0 -23px;
 }
 @media only screen and (max-width: 767px) {
   body {
