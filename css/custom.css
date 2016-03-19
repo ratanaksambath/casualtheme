@@ -125,7 +125,7 @@ img.scale-with-grid{
   height: 100%;
 }
 .client__logo__padding{
-  padding-left:70px;
+  padding-left:112px;
 }
 .darkStyle .accordion_blog dt .acc_heading {
   background-color: rgba(0,0,0,0.7);
@@ -188,6 +188,12 @@ img.scale-with-grid{
   .accordion_blog__header_description{
     padding-left:15px;
   }
+  .accordion_blog dd .acc_content {
+    padding: 0 13px;
+  }
+  .accordion_blog__header_description__head{
+
+  }
   .header .nav ul li a {
   padding: 10px;
   font-size: 18px;
@@ -219,7 +225,7 @@ img.scale-with-grid{
   }
   .truth-box{
     top: 8px;
-    min-width: 352px;
+    max-width: 352px;
   }
   .container{
     min-width: 337px !important;
@@ -233,10 +239,35 @@ img.scale-with-grid{
   .creative__work__dt{
     padding-bottom: 10px;
   }
+  .creative__work{
+    margin-top: -26px;
+    margin-left:16px;
+  }
+  .work__content__videobox{
+  height: 63px !important;
+  width: 112px !important;
+  }
+  .client__box{
+    margin-top: -85px !important;
+  }
+  #my_popup{
+    transform: scale(0.8);
+  }
+
+  .popup_visible #my_popup {
+    transform: scale(1);
+  }
 
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .client__logo__padding{
     padding-left:25px;
+  }
+    .truth-box{
+    top: 8px;
+    max-width: 352px;
+  }
+  .truth-content{
+    width: 330px !important;
   }
 }
