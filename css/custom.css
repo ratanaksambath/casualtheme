@@ -131,10 +131,10 @@ img.scale-with-grid{
   background-color: rgba(0,0,0,0.7);
 }
 .darkStyle .accordion_blog dt:hover .acc_heading{
- background-color: rgba(0,0,0,0.9); 
+ background-color: rgba(0,0,0,0.9);
 }
 .creative__work__dd{
- background-color: rgba(0,0,0,0.7); 
+ background-color: rgba(0,0,0,0.7);
 }
 .creative__work{
   float: left;
@@ -167,6 +167,7 @@ img.scale-with-grid{
 .accordion_blog dd .acc_content{
   padding: 25px 0 0 ;
 }
+
 @media only screen and (max-width: 767px) {
   body {
   background: url('../images/background/image1_s.jpg') no-repeat 90% 50% fixed;
@@ -176,8 +177,10 @@ img.scale-with-grid{
   background-size: cover;
   }
   .creative__work__dd{
-    min-width: 200px;
-    max-width:337px;
+    /*min-width: 200px;
+    max-width:337px;*/
+    min-width: 344px;
+    max-width: 344px;
   }
   h2{
   font-size:25px;
@@ -258,6 +261,15 @@ img.scale-with-grid{
     transform: scale(1);
   }
 
+  .creative__work__dd.active .work__content__description {
+    padding-top: 10px;
+    width: auto !important;
+  }
+  .creative__work__dd.active .accordion_blog__header_description {
+    position: absolute;
+    top: 0;
+    left: 130px;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .client__logo__padding{
