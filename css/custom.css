@@ -168,6 +168,17 @@ img.scale-with-grid{
   padding: 25px 0 0 ;
 }
 
+.client__box ul {
+  margin: 0;
+  padding: 0 0 0 112px;
+  list-style: none;
+  list-style-position: inside;
+}
+.client__box__item {
+  display: inline-block;
+  width: 24%;
+}
+
 @media only screen and (max-width: 767px) {
   body {
   background: url('../images/background/image1_s.jpg') no-repeat 90% 50% fixed;
@@ -269,6 +280,16 @@ img.scale-with-grid{
     position: absolute;
     top: 0;
     left: 130px;
+  }
+
+  .client__box ul {
+    padding: 0 0 0 10px;
+  }
+  .client__box__item {
+    width: 35%;
+  }
+  .client__box__item:nth-child(3n) {
+    width: 27%;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
