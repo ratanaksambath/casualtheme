@@ -46,7 +46,9 @@
 		ipadDevice = agent.indexOf("ipad") > -1;
 		iPhoneDevice = agent.indexOf("iphone") > -1;
 		iVersion = agent.slice(agent.indexOf("version/")+8,agent.indexOf("version/")+11);
-	
+	    // initialize popup overlay
+        $('#my_popup').popup({transition: 'all 1s'});
+
 		/* Find touch device */
 		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 		  isTouch = true;	
@@ -792,17 +794,19 @@
 	
 	
 	
-// Accordion
+// Accordion blog
 		
 		jQuery(function($){
-          $('.accordion_blog > dt > a').prepend('<span class="closeOpen" ></span>');
-			//$('.accordion_blog').attr("data-autoHide");
+          $('.accordion_blog > dd > a').prepend('<span class="closeOpen" ></span>');
+          
+			// $('.accordion_blog').attr("data-autoHide");
 				 
 			$('.accordion_blog').each( function(){
 				
 				var allDt = $(this);
 				var allPanels = allDt.find(' > dd').hide();
-				allDt.find(' dt .closeOpen').css({"background-position":"0px 0px"});
+				allDt.find(' dd .closeOpen').css({"background-position":"0px -28px"});
+
 				 
 				if($(this).attr("data-openFirstElement") === "true"){
                   $(this).children(":first-child").find(".closeOpen").css({"background-position":"0px -15px"});
@@ -814,8 +818,7 @@
 				
 				$(this).find(' > dt > a').click(function() {
 					$this = $(this);
-					$target =  $this.parent().next();					
-					
+					$target =  $this.parent().next();				
 					$("body").mainFm('intVideoObject', $this);				
 					$("body").find('.tabVideo').each(function(){
 						$(this).find('.vid').remove();
@@ -833,25 +836,36 @@
 						allDt.find(' dt .closeOpen').css({"background-position":"0px 0px"});
 						$this.find(".closeOpen").css({"background-position":"0px -28px"});
 						$target =  $this.parent().next();
+                        if($(this).parent().siblings().hasClass('hidden')){
+                            $('.hidden').show();
+                        } //end if
 						if(!$target.hasClass('active')){
+                            $this.parent().addClass("hidden");
+                            $this.parent().hide();
 							allPanels.removeClass('active').slideUp();
 							$target.addClass('active').slideDown();
-						}else{
-							$this.find(".closeOpen").css({"background-position":"0px 0px"});
-							allPanels.removeClass('active').slideUp();
 						}
+                        $target.find('a').click(function(){
+
+                            allPanels.removeClass('active').slideUp();
+                            $('.hidden').show();
+                        });
+
+
 					}else{	
 						
 						if($this.data('show')){
 							$this.data('show',false);
 							$this.find('.closeOpen').css({"background-position":"0px 0px"});
 							$target.removeClass('active').slideUp();
+                            
 						}else{
 							$this.data('show',true);
 							$this.find(".closeOpen").css({"background-position":"0px -28px"});
-							$target.addClass('active').slideDown();							
+							$target.addClass('active').slideDown();				
+
 						}
-						
+	
 					}
 					
 					setTimeout(function(){ $("html").getNiceScroll().resize(); },500);

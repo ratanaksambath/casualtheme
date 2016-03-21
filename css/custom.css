@@ -9,6 +9,13 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+#contact-link a{
+  padding-left: 15px;
+  width: 21px;
+  height: 10px;
+  margin-top: 2px;
+  background: url('../images/contactus-link.png') 10px 10px no-repeat;
+}
 .backgroundColor,
 .vegas-background {
   display: none !important;
@@ -40,8 +47,12 @@ body {
   font-size: 24px;
   font-weight: 100;
 }
+.current-tab{
+  font-weight: 700 !important;
+}
 .header .nav ul li a:hover{
   font-weight: 700;
+  color:white !important;
   font-style: normal;
 }
 
@@ -71,13 +82,14 @@ body {
   padding:20px 40px 20px 20px;
 }
 .darkBackground{
-  background: rgba(0,0,0,0.50);
+  background: rgba(0,0,0,0.70);
 }
 .acc_heading{
   max-height: 80px;
 }
-.accordion_blog dt .acc_heading h3{
-  margin: 0;
+
+.accordion_blog__header_description h3{
+  margin: 0 !important;
 }
 dd {
   background-color:#222222;
@@ -85,29 +97,75 @@ dd {
   background: rgba(0, 0, 0, 0.2);
 }
 .work-thumbnail{
-  width: 150px;
-  height: 74px;
+  width: 112px;
+  height: 63px;
+
 }
 .b_heading{
+  padding-top: 6px;
+  padding-left: 6px;
   display:inline-flex;
 }
+
 .accordion_blog__header_description{
-  padding-left:35px;
+  padding-left:10px;
+  margin-top:-6px;
+}
+.accordion_blog__header_description__head{
+  padding-top:4px;
+}
+
+h3{
+  font-size:20px !important;
 }
 h2{
-  font-size:32px;
+  font-size:23px;
 }
 img.scale-with-grid{
-  height: 380px;
+  height: 100%;
 }
 .client__logo__padding{
-  padding-left:70px;
+  padding-left:112px;
 }
 .darkStyle .accordion_blog dt .acc_heading {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.7);
 }
 .darkStyle .accordion_blog dt:hover .acc_heading{
- background-color: rgba(0,0,0,0.4); 
+ background-color: rgba(0,0,0,0.9);
+}
+.creative__work__dd{
+ background-color: rgba(0,0,0,0.7);
+}
+.creative__work{
+  float: left;
+  margin-left: 20px;
+  max-width: 354px;
+}
+.creative__work__dt{
+  padding-bottom: 30px;
+}
+.creative__work__dd{
+  min-width:1080px;
+  margin-bottom:30px;
+}
+.work__content__description{
+  width: 500px !important;
+}
+.work__content__videobox{
+  height: 271px !important;
+  width: 483px !important;
+}
+.video_content{
+  height:100%;
+}
+.miniMize{
+  width: 50px;
+  height: 40px;
+  float:right;
+  background: url('../images/accordion_blog_white_icon.png') no-repeat 0 -23px;
+}
+.accordion_blog dd .acc_content{
+  padding: 25px 0 0 ;
 }
 
 @media only screen and (max-width: 767px) {
@@ -118,6 +176,12 @@ img.scale-with-grid{
   -o-background-size: cover;
   background-size: cover;
   }
+  .creative__work__dd{
+    /*min-width: 200px;
+    max-width:337px;*/
+    min-width: 344px;
+    max-width: 344px;
+  }
   h2{
   font-size:25px;
   }
@@ -126,6 +190,12 @@ img.scale-with-grid{
   }
   .accordion_blog__header_description{
     padding-left:15px;
+  }
+  .accordion_blog dd .acc_content {
+    padding: 0 13px;
+  }
+  .accordion_blog__header_description__head{
+
   }
   .header .nav ul li a {
   padding: 10px;
@@ -158,7 +228,7 @@ img.scale-with-grid{
   }
   .truth-box{
     top: 8px;
-    min-width: 352px;
+    max-width: 352px;
   }
   .container{
     min-width: 337px !important;
@@ -169,9 +239,47 @@ img.scale-with-grid{
   .client__logo__padding{
     padding-left:10px;
   }
+  .creative__work__dt{
+    padding-bottom: 10px;
+  }
+  .creative__work{
+    margin-top: -26px;
+    margin-left:16px;
+  }
+  .work__content__videobox{
+  height: 63px !important;
+  width: 112px !important;
+  }
+  .client__box{
+    margin-top: -85px !important;
+  }
+  #my_popup{
+    transform: scale(0.8);
+  }
+
+  .popup_visible #my_popup {
+    transform: scale(1);
+  }
+
+  .creative__work__dd.active .work__content__description {
+    padding-top: 10px;
+    width: auto !important;
+  }
+  .creative__work__dd.active .accordion_blog__header_description {
+    position: absolute;
+    top: 0;
+    left: 130px;
+  }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .client__logo__padding{
     padding-left:25px;
+  }
+    .truth-box{
+    top: 8px;
+    max-width: 352px;
+  }
+  .truth-content{
+    width: 330px !important;
   }
 }
